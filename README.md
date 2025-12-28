@@ -9,9 +9,8 @@ sequence for the recombinant protein, outputs protein fasta files, and
 summarizes information for the protein.
 
 There are two major use cases:
-
-1 - you are a protein scientist with lots of these files
-2 - you are reading a published manuscript about a recombinant protein produced in *K. phaffii* and want to take a closer look
+1. you are a protein scientist with lots of these files
+2. you are reading a published manuscript about a recombinant protein produced in *K. phaffii* and want to take a closer look
 
 
 
