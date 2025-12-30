@@ -1,5 +1,6 @@
 import os
 from bcolors.bcolors import bcolors
+from manager.Manager import Manager
 
 def greeting():
     '''
@@ -29,7 +30,7 @@ def menu():
     print()
     print('=======================================')
     print('1 - Make an object from a plasmid in')
-    print(f'   {bcolors.OKBLUE}data{bcolors.ENDC} folder.')
+    print(f'    the {bcolors.OKBLUE}data{bcolors.ENDC} folder.')
     print('9 - Quit.')
     print('=======================================')
     print()
@@ -41,11 +42,12 @@ def menu():
     
 def main():
     greeting()
-    root = "data"
+    root = "data/"
+    plasmid_manager = Manager()
     while True:
         selection = menu()
         if selection == 1:
-            print(f"That is an interesting choice...")
+            plasmid_manager.create_object(root)
         elif selection == 9:
             goodbye()
             break
