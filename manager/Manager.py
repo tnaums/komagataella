@@ -1,6 +1,7 @@
 import os
 import re
 from bcolors.bcolors import bcolors
+from plasmid.Plasmid import Plasmid
 
 class Manager():
 
@@ -15,7 +16,7 @@ class Manager():
 
     def create_object(self, root):
         '''
-        Creates Plasmid objects and inserts them in the Manager dictionary.
+        Creates Plasmid objects and inserts them into the Manager dictionary.
         '''
         # Interactively decide which plasmid to use.
         subfolder = select_subfolder(root)
@@ -26,22 +27,11 @@ class Manager():
         header, sequence = single_fasta_parser(chosen_file)
         print(f'Header: {header}')
         print(f'Sequence: {sequence}')
-        # Search sequence for promoter
-        promoter = get_promoter(sequence)
-        print(f'\n\nThe promoter is: {promoter}')
-        # # Create specific plasmid object type that depends on above analysis
-        # if promoter == 'aox1' or promoter == 'gap':
-        #     oPlasmid = pichia_plasmid(name,header, sequence, promoter)
-        #     self.pichia_list.append(oPlasmid)
-        #     self.combined_list.append(oPlasmid)
-        #     print(oPlasmid)
-        # elif promoter == 'T7' or promoter == 'ara':
-        #     oPlasmid = ecoli_plasmid(name,header, sequence, promoter)
-        #     self.ecoli_list.append(oPlasmid)
-        #     self.combined_list.append(oPlasmid)
-        #     print(oPlasmid)
-        # else:
-        #     None
+        # Create plasmid object
+        oPlasmid = Plasmid(fasta_file, header, sequence)
+        print(oPlasmid.coding_sequence)
+        self.plasmids_dict[self.next_number] = oPlasmid
+        self.next_number += 1
 
 
 def select_subfolder(root_directory):
@@ -68,9 +58,7 @@ def select_subfolder(root_directory):
 def select_file(root_directory):
     '''
     Prints files from a given folder. Initially tries to find
-    and return expected file like 'pTAN167.fa'. If not, the 
-    fasta files that end with 'fa' are displayed for manual
-    selection. 
+    and return expected file ending in `fa` or `fasta`
     '''
     # Prepare to print at the top of the page
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -85,7 +73,7 @@ def select_file(root_directory):
         for idx, file in enumerate(fasta_files):
             print(f'{idx:>3}. {file}')
     else:
-        print('No fasta files found (*.fa)')
+        print('No fasta files found (*.fa or *.fasta)')
         return None
     print('=======================================')
     while True:
@@ -110,15 +98,3 @@ def single_fasta_parser(fasta_file):
             sequence = sequence + line.rstrip()
     return (header, sequence)
 
-def get_promoter(sequence):
-    '''
-    Searches for methanol inducible aox1 promoter (pPIC plasmids). If
-    not found, looks for constitutive gap promoter (pGAP plasmids).
-    '''
-    aox1 = re.compile(r'AGATCTAACATC.{916}TTATTCGAAACG')
-    gap = re.compile(r'AGATCTTTTTTG.{459}TTGAACAACTAT')
-    if aox1.search(sequence):
-        return 'aox1'
-    if gap.search(sequence):
-        return 'gap'
-    return None
