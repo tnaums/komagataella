@@ -16,7 +16,7 @@ There are two major use cases:
 Steps to install and run your project.
 
 ## Usage
-Example files are included in `data/`. Each file is placed inside of unique folder; for example: `data/pTAN121/pTAN121.fa`. New files can be added similarly. The DNA sequence fasta files must end in either `*.fa` or `*.fasta`.
+Example files are included in `data/`. Each file is placed inside of a unique folder; for example: `data/pTAN121/pTAN121.fa`. New files can be added similarly. The DNA sequence fasta files must end in either `*.fa` or `*.fasta`.
 
 To run the program, type `python3 main.py`. This will launch an interactive menu.
 

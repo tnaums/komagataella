@@ -30,6 +30,8 @@ class Manager():
         # Create plasmid object
         oPlasmid = Plasmid(fasta_file, header, sequence)
         print(oPlasmid.coding_sequence)
+        print(oPlasmid.secretion)
+        print(oPlasmid.mature_recombinant)
         self.plasmids_dict[self.next_number] = oPlasmid
         self.next_number += 1
 

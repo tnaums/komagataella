@@ -15,8 +15,9 @@ class Plasmid():
         self.DNA = sequence
         self.promoter = self.get_promoter()
         self.coding_sequence = self.get_coding_DNA()
-
-
+        self.secretion = self.secretion_check()
+        self.mature_recombinant = self.get_mature_protein()
+        
     def get_promoter(self):
         '''
         Searches for methanol inducible aox1 promoter (pPICZ plasmids). If
@@ -46,4 +47,70 @@ class Plasmid():
             if match := gap_coding.search(self.DNA):
                 return match.group(1)
         raise NotPichia('Could not find coding sequence.')
+
+
+    def secretion_check(self):
+        '''
+        Uses re to check for alpha factor secretion signal sequence
+        and Ost1 variant. Returns 'alpha', 'ost1', or None.
+        '''
+        alpha = re.compile(r'ATGAGATTTCCT.*GAGGCTGAAGCT')
+        ost1 = re.compile(r'ATGAGGCAGGTT.*GAGGCTGAAGCT')
+        if alpha.search(self.DNA):
+            return 'alpha'
+        if ost1.search(self.DNA):
+            return 'ost1'
+        return 'cytoplasmic'
+
     
+    def get_mature_protein(self):
+        '''
+        From the extracted coding sequence, which may contain unused
+        C-terminal tag, and knowledge of the secretion signal 
+        sequence (alpha, ost1, ''), return mature,recombinant 
+        protein sequence.
+        '''
+        aa_to_stop = ''
+        mature = ''
+        genetic_code = {'TTT': 'F', 'TTC': 'F', 'TTA': 'L', 'TTG': 'L',
+                        'TCT': 'S', 'TCC': 'S', 'TCA': 'S', 'TCG': 'S',
+                        'TAT': 'Y', 'TAC': 'Y', 'TAA': '*', 'TAG': '*',
+                        'TGT': 'C', 'TGC': 'C', 'TGA': '*', 'TGG': 'W',
+                        'CTT': 'L', 'CTC': 'L', 'CTA': 'L', 'CTG': 'L',
+                        'CCT': 'P', 'CCC': 'P', 'CCA': 'P', 'CCG': 'P',
+                        'CAT': 'H', 'CAC': 'H', 'CAA': 'Q', 'CAG': 'Q',
+                        'CGT': 'R', 'CGC': 'R', 'CGA': 'R', 'CGG': 'R',
+                        'ATT': 'I', 'ATC': 'I', 'ATA': 'I', 'ATG': 'M',
+                        'ACT': 'T', 'ACC': 'T', 'ACA': 'T', 'ACG': 'T',
+                        'AAT': 'N', 'AAC': 'N', 'AAA': 'K', 'AAG': 'K',
+                        'AGT': 'S', 'AGC': 'S', 'AGA': 'R', 'AGG': 'R',
+                        'GTT': 'V', 'GTC': 'V', 'GTA': 'V', 'GTG': 'V',
+                        'GCT': 'A', 'GCC': 'A', 'GCA': 'A', 'GCG': 'A',
+                        'GAT': 'D', 'GAC': 'D', 'GAA': 'E', 'GAG': 'E',
+                        'GGT': 'G', 'GGC': 'G', 'GGA': 'G', 'GGG': 'G'
+                        }
+
+        if not self.coding_sequence:
+            return None
+        
+        # Ensure in-frame start at ATG. some GAP cytoplasmic
+        # sequences have extra nucleotides
+        start_at_atg = re.compile(r'ATG.*')
+        new_coding = start_at_atg.search(self.coding_sequence)
+        self.coding_sequence = new_coding.group()
+        for first, second, third in zip(
+                self.coding_sequence[::3],
+                self.coding_sequence[1::3],
+                self.coding_sequence[2::3]
+        ):
+            codon = first + second + third
+            codon = codon.upper()
+            aa_to_stop = aa_to_stop + genetic_code[codon]
+            if aa_to_stop.endswith('*'):
+                break
+        mature = aa_to_stop[:-1]
+        if self.secretion == 'alpha':
+            return mature[89:]
+        if self.secretion == 'ost1':
+            return mature[92:]
+        return mature
