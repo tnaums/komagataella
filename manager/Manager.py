@@ -25,16 +25,12 @@ class Manager():
         chosen_file = f'{root}{subfolder}/{fasta_file}'
         # Open file, get header and sequence
         header, sequence = single_fasta_parser(chosen_file)
-        print(f'Header: {header}')
-        print(f'Sequence: {sequence}')
         # Create plasmid object
         oPlasmid = Plasmid(fasta_file, header, sequence)
-        print(oPlasmid.coding_sequence)
-        print(oPlasmid.secretion)
-        print(oPlasmid.mature_recombinant)
         self.plasmids_dict[self.next_number] = oPlasmid
         self.next_number += 1
-
+        print(oPlasmid)
+        print(oPlasmid.protein)
 
 def select_subfolder(root_directory):
     '''

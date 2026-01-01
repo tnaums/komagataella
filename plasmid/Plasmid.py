@@ -1,4 +1,6 @@
 import re
+from bcolors.bcolors import bcolors
+from protein.Protein import Protein
 
 class NotPichia(Exception):
     '''raise this exception if plasmid creation fails.'''
@@ -17,6 +19,7 @@ class Plasmid():
         self.coding_sequence = self.get_coding_DNA()
         self.secretion = self.secretion_check()
         self.mature_recombinant = self.get_mature_protein()
+        self.protein = Protein(self.header, self.mature_recombinant)
         
     def get_promoter(self):
         '''
@@ -114,3 +117,32 @@ class Plasmid():
         if self.secretion == 'ost1':
             return mature[92:]
         return mature
+
+
+
+    def print_fasta(self):
+        '''
+        Returns the mature recombinant protein in fasta format.
+        '''
+        printable = f'{bcolors.OKBLUE}>{self.header}{bcolors.ENDC}\n'
+        sequence_string = ''
+        for idx, aa in enumerate(self.mature_recombinant, start=1):
+            sequence_string = sequence_string + aa
+            if idx % 60 == 0:
+                printable += sequence_string + '\n'
+                sequence_string = ''
+        printable += sequence_string + '\n'
+        return printable
+
+    
+    def __repr__(self):
+        return_str = ''
+        return_str += f'name: {self.header}\n'
+        return_str += f'promoter: {self.promoter}\n'
+        return_str += f'coding sequence: {self.coding_sequence[:20]}'
+        return_str += f'...{self.coding_sequence[-20:]}'
+        return_str += f' ({len(self.coding_sequence)}bp)\n'
+        return_str += self.print_fasta()
+        return_str += '\n'
+        return return_str
+    
