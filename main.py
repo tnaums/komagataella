@@ -29,8 +29,10 @@ def menu():
     '''
     print()
     print('=======================================')
-    print('1 - See info for a plasmid in')
+    print('1 - Work with a particular plasmid/protein in')
     print(f'    the {bcolors.OKBLUE}data{bcolors.ENDC} folder.')
+    print('2 - Work with all plasmids/proteins in')
+    print(f'    the {bcolors.OKBLUE}data{bcolors.ENDC} folder.')    
     print('9 - Quit.')
     print('=======================================')
     print()
@@ -49,6 +51,10 @@ def main():
         if selection == 1:
             plasmid_manager.create_object(root)
             plasmid_manager.print_object()
+        if selection == 2:
+            plasmid_manager.create_all_objects(root)
+            for plasmid in plasmid_manager.plasmids_list:
+                print(plasmid)
         elif selection == 9:
             goodbye()
             break

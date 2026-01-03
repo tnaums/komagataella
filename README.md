@@ -8,8 +8,8 @@ These plasmids are commonly used to express recombinant proteins in the yeast
 sequence for the recombinant protein and produces a protein summary.
 
 There are two major use cases:
-1. to assist in organizing and documenting a plasmid sequence database from a personal strain collection
-2. to allow automated analysis of proteins encoded by plasmids linked to published manuscripts
+1. Choosing a particular plasmid/protein from the database for detailed analysis.
+2. Producing a nicely formated table that summarizes the entire database.
 
 
 ## Installation

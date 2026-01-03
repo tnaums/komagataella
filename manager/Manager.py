@@ -2,6 +2,7 @@ import os
 import re
 from bcolors.bcolors import bcolors
 from plasmid.Plasmid import Plasmid
+from plasmid.Plasmid import NotPichia
 
 class Manager():
 
@@ -12,6 +13,7 @@ class Manager():
         '''
         self.plasmids_dict = {}
         self.next_number = 0
+        self.plasmids_list = []
 
 
     def create_object(self, root):
@@ -25,7 +27,7 @@ class Manager():
             fasta_file = select_file(f'{root}{subfolder}')
             if fasta_file == None:
                 print(f'No fasta files found for {subfolder}')
-                input('Press return to continue.')
+                input('\nPress Enter to continue.')
             else:
                 break
         chosen_file = f'{root}{subfolder}/{fasta_file}'
@@ -43,7 +45,31 @@ class Manager():
         os.system('cls' if os.name == 'nt' else 'clear')        
         print(self.plasmids_dict[0])
         print(self.plasmids_dict[0].protein)
+        input('\nPress Enter to continue...')
 
+    def create_all_objects(self, root):
+        '''
+        Creates Plasmid objects for the entire database in root folder.
+        '''
+        # Reset the list, in case it was used previously
+        self.plasmids_list = []
+        folders = get_folders(root)
+        print(folders)
+        for folder in folders:
+            fasta_file = select_file_automatic(f'{root}{folder}')
+            if not fasta_file:
+                continue
+            chosen_file = f'{root}{folder}/{fasta_file}'
+ #           name = chosen_file[30:37]
+            # Open file, get header and sequence
+            header, sequence = single_fasta_parser(chosen_file)
+            # Create the object
+            try:
+                oPlasmid = Plasmid(chosen_file, header, sequence)
+                self.plasmids_list.append(oPlasmid)                
+            except NotPichia:
+                continue
+        
 
 def select_subfolder(root_directory):
     '''
@@ -96,6 +122,38 @@ def select_file(root_directory):
             print('Please try again.')
     return fasta_files[file_choice]
 
+def select_file_automatic(root_directory):
+    '''
+    Initially tries to find and return a single file ending in `fa` 
+    or `fasta`. If no file is found, returns None. If more than one file,
+    asks user for manual selection.
+    '''
+    # Prepare to print at the top of the page
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(f'{bcolors.OKGREEN}Entering {root_directory}{bcolors.ENDC}')
+    print()
+    fasta_files = []
+    for file in os.listdir(root_directory):
+        if file.endswith('fa') or file.endswith('fasta'):
+            fasta_files.append(file)
+    if len(fasta_files) == 1:
+        return fasta_files[0]
+    elif len(fasta_files) == 0:
+        print('Fasta file not found.')
+        return None
+    else:
+        print('=======================================')
+        for idx, file in enumerate(fasta_files):
+            print(f'{idx:>3}. {file}')
+        print('=======================================')
+    while True:
+        try:
+            file_choice = int(input('What file do you want to analyze? (input integer) '))
+            break
+        except ValueError:
+            print('Please try again.')
+    return fasta_files[file_choice]
+
 
 def single_fasta_parser(fasta_file):
     '''
@@ -110,3 +168,21 @@ def single_fasta_parser(fasta_file):
             sequence = sequence + line.rstrip()
     return (header, sequence)
 
+def get_folders(root_directory):
+    '''
+    Given root folder with plasmid files, returns a list of plasmid 
+    folders named pTAN___.
+    '''
+    # Prepare to print at the top of the page
+    os.system('cls' if os.name == 'nt' else 'clear')
+#    pTAN_finder = re.compile(r'^pTAN\d{3}')
+    print()
+    print(f'Entering {root_directory}')
+    print()
+    walker = os.walk(root_directory)
+    root_dirs_files = next(walker)
+    subfolders = []
+    for folder in root_dirs_files[1]:
+        subfolders.append(folder)
+    subfolders.sort()
+    return subfolders
