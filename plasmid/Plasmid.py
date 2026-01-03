@@ -139,10 +139,10 @@ class Plasmid():
         return_str = ''
         return_str += f'name: {self.header}\n'
         return_str += f'promoter: {self.promoter}\n'
+        return_str += f'secretion: {self.secretion}\n'
         return_str += f'coding sequence: {self.coding_sequence[:20]}'
         return_str += f'...{self.coding_sequence[-20:]}'
         return_str += f' ({len(self.coding_sequence)}bp)\n'
-        return_str += self.print_fasta()
         return_str += '\n'
         return return_str
     

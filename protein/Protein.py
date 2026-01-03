@@ -44,7 +44,7 @@ class Protein():
         
     def check_tag_anywhere(self):
         '''
-        Checks the mature_recombinant sequence for a His tag.
+        Checks protein sequence for a His tag.
         '''
         tag_re = re.compile(r'HHHHHH')
         if not self.amino_acids:
@@ -69,5 +69,7 @@ class Protein():
         return_str += f'Length: {self.length} amino acids\n'
         if self.tag:
             return_str += 'His tag is present'
+        else:
+            return_str += 'Not tagged'
         return return_str
         

@@ -18,19 +18,32 @@ class Manager():
         '''
         Creates Plasmid objects and inserts them into the Manager dictionary.
         '''
-        # Interactively decide which plasmid to use.
-        subfolder = select_subfolder(root)
-        # Find the fasta file for the expression plasmid.
-        fasta_file = select_file(f'{root}{subfolder}')
+        while True:
+            # Interactively decide which plasmid to use.
+            subfolder = select_subfolder(root)
+            # Find the fasta file for the expression plasmid.
+            fasta_file = select_file(f'{root}{subfolder}')
+            if fasta_file == None:
+                print(f'No fasta files found for {subfolder}')
+                input('Press return to continue.')
+            else:
+                break
         chosen_file = f'{root}{subfolder}/{fasta_file}'
         # Open file, get header and sequence
         header, sequence = single_fasta_parser(chosen_file)
         # Create plasmid object
         oPlasmid = Plasmid(fasta_file, header, sequence)
         self.plasmids_dict[self.next_number] = oPlasmid
-        self.next_number += 1
-        print(oPlasmid)
-        print(oPlasmid.protein)
+#        self.next_number += 1
+
+    def print_object(self):
+        '''
+        Prints analysis summary for object
+        '''
+        os.system('cls' if os.name == 'nt' else 'clear')        
+        print(self.plasmids_dict[0])
+        print(self.plasmids_dict[0].protein)
+
 
 def select_subfolder(root_directory):
     '''
@@ -66,14 +79,15 @@ def select_file(root_directory):
     for file in os.listdir(root_directory):
         if file.endswith('fa') or file.endswith('fasta'):
             fasta_files.append(file)
-    print('=======================================')
-    if fasta_files:
+
+    if len(fasta_files) > 0:
+        print('=======================================')
         for idx, file in enumerate(fasta_files):
             print(f'{idx:>3}. {file}')
+        print('=======================================')
     else:
-        print('No fasta files found (*.fa or *.fasta)')
+        print('Fasta file not found.')
         return None
-    print('=======================================')
     while True:
         try:
             file_choice = int(input('What file do you want to analyze? (input integer) '))

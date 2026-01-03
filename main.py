@@ -29,7 +29,7 @@ def menu():
     '''
     print()
     print('=======================================')
-    print('1 - Make an object from a plasmid in')
+    print('1 - See info for a plasmid in')
     print(f'    the {bcolors.OKBLUE}data{bcolors.ENDC} folder.')
     print('9 - Quit.')
     print('=======================================')
@@ -48,6 +48,7 @@ def main():
         selection = menu()
         if selection == 1:
             plasmid_manager.create_object(root)
+            plasmid_manager.print_object()
         elif selection == 9:
             goodbye()
             break
