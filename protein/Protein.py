@@ -1,4 +1,5 @@
 import re
+from Bio.SeqUtils.IsoelectricPoint import IsoelectricPoint as IP
 
 class Protein():
     """Protein object from header and sequence."""
@@ -9,6 +10,7 @@ class Protein():
         self.length = len(amino_acids)
         self.mw = self.mass(amino_acids)
         self.tag = self.check_tag_anywhere()
+        self.pI = self.get_pI()
         
     def mass(self, amino_acids):
         """
@@ -54,6 +56,16 @@ class Protein():
         else:
             return False
 
+
+    def get_pI(self):
+        '''
+        Uses biopython method to calculate and return the pI of
+        self.mature_recombinant.
+        '''
+        protein = IP(self.amino_acids)
+        return protein.pi()
+    
+        
     def __repr__(self):
         return f'Protein: {self.header}\nSequence: {self.amino_acids}\nMass: {self.mw/1000:>5.2f} kDa'
 
@@ -70,6 +82,7 @@ class Protein():
         if self.tag:
             return_str += 'His tag is present'
         else:
-            return_str += 'Not tagged'
+            return_str += 'Not tagged\n'
+        return_str += f'pI: {self.pI:.2f}'
         return return_str
         
