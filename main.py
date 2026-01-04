@@ -11,16 +11,15 @@ def greeting():
 
     # Print the menu
     print()
-    print(f'{bcolors.OKGREEN}Welcome to the expression plasmid', end='')
-    print(f' analyzer!{bcolors.ENDC}')
+    print(f'{bcolors.OKGREEN}Welcome to komatagaella,', end='')
+    print(f' the expression plasmid analyzer!{bcolors.ENDC}')
 
 def goodbye():
     '''
     Prints a goodbye message.
     '''
     print()
-    print(f'{bcolors.OKGREEN}Thank you for using the expression ', end='')
-    print(f'plasmid analyzer!{bcolors.ENDC}')
+    print(f'{bcolors.OKGREEN}Thank you for using komatagaella!{bcolors.ENDC}')
     print()
 
 def menu():
@@ -55,6 +54,11 @@ def main():
             plasmid_manager.create_all_objects(root)
             for plasmid in plasmid_manager.plasmids_list:
                 print(plasmid)
+            plasmid_manager.prepare_for_pandas()
+            for plasmid in plasmid_manager.pandas_list:
+                print(plasmid)
+            plasmid_manager.create_df()
+            print(plasmid_manager.plasmids_df)
         elif selection == 9:
             goodbye()
             break

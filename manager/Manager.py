@@ -1,5 +1,6 @@
 import os
 import re
+import pandas as pd
 from bcolors.bcolors import bcolors
 from plasmid.Plasmid import Plasmid
 from plasmid.Plasmid import NotPichia
@@ -14,7 +15,7 @@ class Manager():
         self.plasmids_dict = {}
         self.next_number = 0
         self.plasmids_list = []
-
+        self.pandas_list = []
 
     def create_object(self, root):
         '''
@@ -53,6 +54,7 @@ class Manager():
         '''
         # Reset the list, in case it was used previously
         self.plasmids_list = []
+        self.pandas_list = []
         folders = get_folders(root)
         print(folders)
         for folder in folders:
@@ -69,7 +71,23 @@ class Manager():
                 self.plasmids_list.append(oPlasmid)                
             except NotPichia:
                 continue
-        
+
+
+    def prepare_for_pandas(self):
+        self.pandas_list = []    # Clear any previous list
+        for plasmid in self.plasmids_list:
+            if plasmid.protein.tag:
+                tag = '+'
+            else:
+                tag = ''
+            self.pandas_list.append([plasmid.header, plasmid.promoter, plasmid.secretion, plasmid.protein.tag, plasmid.protein.mw, plasmid.protein.pI])
+        return
+
+    def create_df(self):
+        self.plasmids_df = pd.DataFrame(self.pandas_list, columns=['plasmid', 'promoter', 'SSS', 'tag', 'kDa', 'pI'])
+        return
+    
+            
 
 def select_subfolder(root_directory):
     '''
@@ -186,3 +204,5 @@ def get_folders(root_directory):
         subfolders.append(folder)
     subfolders.sort()
     return subfolders
+
+
