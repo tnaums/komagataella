@@ -23,7 +23,7 @@ To run the program, type `python3 main.py`. This will launch an interactive menu
 
 If a single plasmid/protein is selected, text output is produced:
 
-`name: pTAN160_Esorghi_lactamase
+```name: pTAN160_Esorghi_lactamase
 promoter: aox1
 secretion: alpha
 coding sequence: ATGAGATTTCCTTCAATTTT...ATCATCATCATCATCATTGA (2203bp)
@@ -47,7 +47,7 @@ Length: 621 amino acids
 Not tagged
 pI: 5.18
 
-Press Enter to continue...`
+Press Enter to continue...```
 
 If the entire database is selected, a table is produced:
 
