@@ -54,11 +54,12 @@ def main():
             plasmid_manager.create_all_objects(root)
             for plasmid in plasmid_manager.plasmids_list:
                 print(plasmid)
-            plasmid_manager.prepare_for_pandas()
+            plasmid_manager.prepare_for_pandas(plasmid_manager.plasmids_list)
             for plasmid in plasmid_manager.pandas_list:
                 print(plasmid)
             plasmid_manager.create_df()
             print(plasmid_manager.plasmids_df)
+            plasmid_manager.create_table()
         elif selection == 9:
             goodbye()
             break

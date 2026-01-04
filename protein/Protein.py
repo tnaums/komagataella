@@ -42,7 +42,7 @@ class Protein():
         protein_mass = CONSTANT
         for residue in amino_acids:
             protein_mass = protein_mass + mass_dict[residue]
-        return protein_mass
+        return protein_mass / 1000
         
     def check_tag_anywhere(self):
         '''
@@ -77,7 +77,7 @@ class Protein():
             if idx % 60 == 0:
                 return_str = return_str + '\n'
         return_str += '\n\n'
-        return_str += f'Mass: {self.mw/1000:>5.2f} kDa\n'
+        return_str += f'Mass: {self.mw:>5.2f} kDa\n'
         return_str += f'Length: {self.length} amino acids\n'
         if self.tag:
             return_str += 'His tag is present'

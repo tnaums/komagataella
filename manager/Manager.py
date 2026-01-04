@@ -1,6 +1,7 @@
 import os
 import re
 import pandas as pd
+from great_tables import GT, style, loc, md
 from bcolors.bcolors import bcolors
 from plasmid.Plasmid import Plasmid
 from plasmid.Plasmid import NotPichia
@@ -35,9 +36,13 @@ class Manager():
         # Open file, get header and sequence
         header, sequence = single_fasta_parser(chosen_file)
         # Create plasmid object
-        oPlasmid = Plasmid(fasta_file, header, sequence)
-        self.plasmids_dict[self.next_number] = oPlasmid
-#        self.next_number += 1
+        try:
+            oPlasmid = Plasmid(fasta_file, header, sequence)
+            self.plasmids_dict[self.next_number] = oPlasmid            
+        except NotPichia:
+            print('Not a pichia expression plasmid.')
+            input('Press Enter to continue...')
+            self.create_object(root)
 
     def print_object(self):
         '''
@@ -73,19 +78,68 @@ class Manager():
                 continue
 
 
-    def prepare_for_pandas(self):
+    def prepare_for_pandas(self, chosen_list):
         self.pandas_list = []    # Clear any previous list
-        for plasmid in self.plasmids_list:
+        for plasmid in chosen_list:
             if plasmid.protein.tag:
                 tag = '+'
             else:
                 tag = ''
-            self.pandas_list.append([plasmid.header, plasmid.promoter, plasmid.secretion, plasmid.protein.tag, plasmid.protein.mw, plasmid.protein.pI])
+            self.pandas_list.append([plasmid.header, plasmid.promoter, plasmid.secretion, tag, plasmid.protein.mw, plasmid.protein.pI])
         return
 
     def create_df(self):
         self.plasmids_df = pd.DataFrame(self.pandas_list, columns=['plasmid', 'promoter', 'SSS', 'tag', 'kDa', 'pI'])
         return
+
+
+    def create_table(self):
+        self.table = (
+            GT(self.plasmids_df, rowname_col='plasmid')
+            .tab_header(
+                title=md('**Expression Plasmids**'),
+            )
+            .fmt_number(columns=['kDa', 'pI'], decimals=1)
+            .tab_spanner(
+                label='',
+                columns=['plasmid', 'promoter', 'SSS', 'tag', 'kDa', 'pI']
+            )
+            .tab_style(
+                style=style.text(size='22px', align='center'),
+                locations=loc.body(
+                    columns='tag',
+                    )
+                )
+            .tab_style(
+                style=style.fill(color='lightblue'),
+                locations=loc.body(
+                    columns='SSS',
+                    rows=lambda frame: frame['SSS'] == 'cytoplasmic',
+                )
+            )
+            .data_color(
+                columns=['kDa'],
+                palette=['rebeccapurple', 'white', 'orange'],
+                na_color='white',
+                domain=[116, 8],
+            )
+            .tab_style(
+                style=style.text(color='green', weight='bold'),
+                locations=loc.body(
+                columns='tag',
+                rows=lambda frame: frame['tag'] == True,
+                )
+            )
+            .tab_style(
+                style=style.fill(color='#F9E3D6'),
+                locations=loc.body(
+                columns='promoter',
+                rows=lambda frame: frame['promoter'] == 'gap',
+                )
+            )
+#        .opt_stylize(style=1)# color='blue') 6,3,1
+        )
+        self.table.show()
     
             
 
