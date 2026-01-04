@@ -55,8 +55,5 @@ If the entire database is selected, a table is produced:
 <img src="data/table.png">
 
 
-## Contributing
-Guidelines for contributing to the project.
-
 ## License
 Information about the project’s license.
