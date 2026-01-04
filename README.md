@@ -20,7 +20,8 @@ Example files are included in `data/`. Each file is placed inside of a unique fo
 
 To run the program, type `python3 main.py`. This will launch an interactive menu.
 
-[link text](data/table.html)
+<img src="data/table.html" width="800px">
+
 
 ## Contributing
 Guidelines for contributing to the project.
