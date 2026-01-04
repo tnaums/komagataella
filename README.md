@@ -54,6 +54,3 @@ If the entire database is selected, a table is produced:
 
 <img src="data/table.png">
 
-
-## License
-Information about the project’s license.
