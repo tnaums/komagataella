@@ -139,6 +139,7 @@ class Manager():
             )
 #        .opt_stylize(style=1)# color='blue') 6,3,1
         )
+        self.table.save('table.png')
         self.table.show()
     
             
