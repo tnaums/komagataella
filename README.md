@@ -47,7 +47,8 @@ Length: 621 amino acids
 Not tagged
 pI: 5.18
 
-Press Enter to continue...```
+Press Enter to continue...
+```
 
 If the entire database is selected, a table is produced:
 
