@@ -13,9 +13,15 @@ class Manager():
         Manager class object that manages Plasmid objects. Stores
         them in a dictionary with integer keys, starting at zero.
         '''
+        # This is a hack; single analysis uses a dict with key always
+        # set to 0. Only one object exists in dict
         self.plasmids_dict = {}
         self.next_number = 0
+        # List is for analysis of all plasmids in the library. Plasmid
+        # objects are created and inserted
         self.plasmids_list = []
+        # A list of lists that assembles data needed for pandas df
+        # from the plasmid objects. Used to create great-tables table.
         self.pandas_list = []
 
     def create_object(self, root):
@@ -139,7 +145,6 @@ class Manager():
             )
 #        .opt_stylize(style=1)# color='blue') 6,3,1
         )
-        self.table.save('table.png')
         self.table.show()
     
             

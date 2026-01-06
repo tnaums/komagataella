@@ -80,7 +80,7 @@ class Protein():
         return_str += f'Mass: {self.mw:>5.2f} kDa\n'
         return_str += f'Length: {self.length} amino acids\n'
         if self.tag:
-            return_str += 'His tag is present'
+            return_str += 'His tag is present\n'
         else:
             return_str += 'Not tagged\n'
         return_str += f'pI: {self.pI:.2f}'

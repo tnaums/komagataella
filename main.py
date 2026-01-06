@@ -26,6 +26,8 @@ def menu():
     '''
     Prints a menu and returns the selection as an integer.
     '''
+   # Prepare to print at the top of the page
+    os.system('cls' if os.name == 'nt' else 'clear')    
     print()
     print('=======================================')
     print('1 - Work with a particular plasmid/protein in')
@@ -52,13 +54,13 @@ def main():
             plasmid_manager.print_object()
         if selection == 2:
             plasmid_manager.create_all_objects(root)
-            for plasmid in plasmid_manager.plasmids_list:
-                print(plasmid)
+            # for plasmid in plasmid_manager.plasmids_list:
+            #     print(plasmid)
             plasmid_manager.prepare_for_pandas(plasmid_manager.plasmids_list)
-            for plasmid in plasmid_manager.pandas_list:
-                print(plasmid)
+            # for plasmid in plasmid_manager.pandas_list:
+            #     print(plasmid)
             plasmid_manager.create_df()
-            print(plasmid_manager.plasmids_df)
+#            print(plasmid_manager.plasmids_df)
             plasmid_manager.create_table()
         elif selection == 9:
             goodbye()
