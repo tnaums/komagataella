@@ -50,6 +50,27 @@ pI: 5.18
 Press Enter to continue...
 ```
 
+In single protein/plasmid mode, an optional blastp search can be performed. Since submitting and retrieving results from NCBI is slow, the results are written to `data/plasmid/plasmid.fa_blast.xml`. When present, a summary is shown automatically. Whether the results file exists or not, a new search can optionally be performed.
+
+```
+Checking for existing blastp results...
+
+Found existing blastp results file...
+
+
+  1.      QIR83317.1	kilbournase                             	Stenocarpella maydis               
+  2.    KAL2209420.1	subtilisin-like protein                 	Sarocladium strictum               
+  3.    KAH8171103.1	subtilase family protein                	Sarocladium implicatum             
+  4.    KAH7317069.1	peptidase S8/S53 domain-containing prote	Stachybotrys elegans               
+  5.  XP_046006235.1	peptidase S8/S53 domain-containing prote	Microdochium trichocladiopsis      
+  6.    KAI9147171.1	kilbournase                             	Paramyrothecium foliicola          
+
+
+Would you like to run/re-run blastp at ncbi? (Y/N) Y
+
+Running remote blastp against nr database...
+```
+
 If the entire database is selected, a table is produced:
 
 <img src="data/table.png">

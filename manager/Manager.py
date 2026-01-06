@@ -61,10 +61,20 @@ class Manager():
         print('\n\nChecking for existing blastp results...\n')
         blast_flag = self.plasmids_dict[0].protein.check_blast()
         if blast_flag:
-            print('Found existing blastp results file.')
-            input('Press Enter to continue...')
+            print('Found existing blastp results file...\n\n')
             self.plasmids_dict[0].protein.print_blast()
-        input('\nPress Enter to continue...')
+        while True:
+            query = input('\n\nWould you like to run/re-run blastp at ncbi? (Y/N) ')
+            if query == 'Y' or query == 'y':
+                self.plasmids_dict[0].protein.run_blast()
+                self.plasmids_dict[0].protein.print_blast()
+                input('\nPress Enter to continue...')
+                break
+            elif query == 'N' or query == 'n':
+                print('\nskipping blastp...')
+                break
+            else:
+                print("Please choose 'Y' or 'N'")
 
     def create_all_objects(self, root):
         '''

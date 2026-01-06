@@ -121,10 +121,27 @@ class Protein():
         blast_record = NCBIXML.read(result_handle)
         if blast_record.alignments:
             for idx, alignment in enumerate(blast_record.alignments):
-                print(alignment)
-                if idx == 2:
+                title_match = alignment_parser.search(alignment.title)
+                identifier, description, organism = title_match.groups()
+                print(f'{idx + 1:>3}. {identifier:>15}\t{description[:40]:<40}\t{organism:<35}')
+                if idx == 5:
                     break
 
+    def run_blast(self):
+        '''
+        Run blastp with self.amino_acids as query against the
+        refseq_protein database.
+        '''
+        print()
+        print('Running remote blastp against nr database...')
+        print()
+        result_handle = NCBIWWW.qblast('blastp', 'nr', self.amino_acids)
+        blast_file_out = f'{self.path}/{self.fasta_file}_blast.xml'
+
+        with open(blast_file_out, 'w') as out_handle:
+            out_handle.write(result_handle.read())
+            print(f'Wrote blast_file_out: {blast_file_out}')            
+        result_handle.close()
 
     
     def __repr__(self):
