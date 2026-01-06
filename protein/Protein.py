@@ -1,17 +1,26 @@
 import re
+import os
 from Bio.SeqUtils.IsoelectricPoint import IsoelectricPoint as IP
+from Bio.Blast import NCBIWWW
+from Bio.Blast import NCBIXML
 
 class Protein():
     """Protein object from header and sequence."""
 
-    def __init__(self, header, amino_acids):
+    def __init__(self, path, fasta_file, header, amino_acids):
+        self.path = path
+        self.fasta_file = fasta_file
         self.header = header
         self.amino_acids = amino_acids
         self.length = len(amino_acids)
         self.mw = self.mass(amino_acids)
         self.tag = self.check_tag_anywhere()
         self.pI = self.get_pI()
-        
+        self.blast = False
+        self.identifier = ""
+        self.description = ""
+        self.organism = ""
+
     def mass(self, amino_acids):
         """
         Returns the monoisotopic mass for a protein or peptide.
@@ -64,8 +73,60 @@ class Protein():
         '''
         protein = IP(self.amino_acids)
         return protein.pi()
+
+
+    def check_blast(self):
+        '''
+        Check if blast output file exists for a plasmid. If it does,
+        set values for self.identifier, self.description, self.organism
+        from the top hit by calling self.parse_blast(). Returns True or 
+        False.
+        '''
+        blast_file_out = f'{self.path}/{self.fasta_file}_blast.xml'
+        if os.path.isfile(blast_file_out):
+            self.parse_blast()
+            return True
+        else:
+            print('Blast file not found.')
+        return False
+
+
     
-        
+    def parse_blast(self):
+        '''
+        Extracts and returns identifier, description, and organism for the top
+        blastp hit.
+        '''
+        alignment_parser = re.compile(r'\|([A-Z_.0-9]*)\|[ ]{0,1}(.*?)\[(.*?)\]')
+        blast_file_out = f'{self.path}/{self.fasta_file}_blast.xml'
+        result_handle = open(blast_file_out)
+        blast_record = NCBIXML.read(result_handle)
+        if blast_record.alignments:
+            top_alignment = blast_record.alignments[0]
+            title_match =  alignment_parser.search(top_alignment.title)
+            identifier, description, organism = title_match.groups()
+            self.identifier = identifier.strip()
+            self.description = description.strip()
+            self.organism = organism.strip()
+        else:
+            print('No alignments found in {blast_file_out}.')
+
+    def print_blast(self):
+        '''
+        Print summary for top blastp hits.
+        '''
+        alignment_parser = re.compile(r'\|([A-Z_.0-9]*)\|[ ]{0,1}(.*?)\[(.*?)\]')
+        blast_file_out = f'{self.path}/{self.fasta_file}_blast.xml'
+        result_handle = open(blast_file_out)
+        blast_record = NCBIXML.read(result_handle)
+        if blast_record.alignments:
+            for idx, alignment in enumerate(blast_record.alignments):
+                print(alignment)
+                if idx == 2:
+                    break
+
+
+    
     def __repr__(self):
         return f'Protein: {self.header}\nSequence: {self.amino_acids}\nMass: {self.mw/1000:>5.2f} kDa'
 

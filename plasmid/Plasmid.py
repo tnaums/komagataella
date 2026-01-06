@@ -11,7 +11,7 @@ class Plasmid():
     '''
     Class that represents a single pPICZ or pGAPZ plasmid.
     '''
-    def __init__(self, fasta_file, header, sequence):
+    def __init__(self, path, fasta_file, header, sequence):
         self.fasta_file = fasta_file
         self.header = header
         self.DNA = sequence
@@ -19,7 +19,7 @@ class Plasmid():
         self.coding_sequence = self.get_coding_DNA()
         self.secretion = self.secretion_check()
         self.mature_recombinant = self.get_mature_protein()
-        self.protein = Protein(self.header, self.mature_recombinant)
+        self.protein = Protein(path, self.fasta_file, self.header, self.mature_recombinant)
         
     def get_promoter(self):
         '''

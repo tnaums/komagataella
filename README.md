@@ -8,15 +8,15 @@ These plasmids are commonly used to express recombinant proteins in the yeast
 sequence for the recombinant protein and produces a protein summary.
 
 There are two major use cases:
-1. Choosing a particular plasmid/protein from the database for detailed analysis.
-2. Producing a nicely formated table that summarizes the entire database.
+1. Choosing a particular plasmid/protein from the DNA sequence database for detailed analysis.
+2. Producing a nicely formated table that summarizes the entire DNA sequence database.
 
 
 ## Installation
 Steps to install and run your project.
 
 ## Usage
-Example files are included in `data/`. Each file is placed inside of a unique folder; for example: `data/pTAN121/pTAN121.fa`. New files can be added similarly. The DNA sequence fasta files must end in either `*.fa` or `*.fasta`.
+Example files (DNA sequence files of expression plasmids in fasta format) are included in `data/`. Each file is placed inside of a unique folder; for example: `data/pTAN121/pTAN121.fa`. New files can be added similarly. The DNA sequence fasta files must end in either `*.fa` or `*.fasta`. While use of the `data/` folder is hard coded, it can be changed to point to another location by editing `root = "data/"` line near the top of the main function in main.py.
 
 To run the program, type `python3 main.py`. This will launch an interactive menu.
 

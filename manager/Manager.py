@@ -38,12 +38,13 @@ class Manager():
                 input('\nPress Enter to continue.')
             else:
                 break
+        path = f'{root}{subfolder}'
         chosen_file = f'{root}{subfolder}/{fasta_file}'
         # Open file, get header and sequence
         header, sequence = single_fasta_parser(chosen_file)
         # Create plasmid object
         try:
-            oPlasmid = Plasmid(fasta_file, header, sequence)
+            oPlasmid = Plasmid(path, fasta_file, header, sequence)
             self.plasmids_dict[self.next_number] = oPlasmid            
         except NotPichia:
             print('Not a pichia expression plasmid.')
@@ -57,6 +58,12 @@ class Manager():
         os.system('cls' if os.name == 'nt' else 'clear')        
         print(self.plasmids_dict[0])
         print(self.plasmids_dict[0].protein)
+        print('\n\nChecking for existing blastp results...\n')
+        blast_flag = self.plasmids_dict[0].protein.check_blast()
+        if blast_flag:
+            print('Found existing blastp results file.')
+            input('Press Enter to continue...')
+            self.plasmids_dict[0].protein.print_blast()
         input('\nPress Enter to continue...')
 
     def create_all_objects(self, root):
@@ -72,13 +79,13 @@ class Manager():
             fasta_file = select_file_automatic(f'{root}{folder}')
             if not fasta_file:
                 continue
+            path = f'{root}{folder}'            
             chosen_file = f'{root}{folder}/{fasta_file}'
- #           name = chosen_file[30:37]
             # Open file, get header and sequence
             header, sequence = single_fasta_parser(chosen_file)
             # Create the object
             try:
-                oPlasmid = Plasmid(chosen_file, header, sequence)
+                oPlasmid = Plasmid(path, chosen_file, header, sequence)
                 self.plasmids_list.append(oPlasmid)                
             except NotPichia:
                 continue
