@@ -20,7 +20,8 @@ class Protein():
         self.identifier = ""
         self.description = ""
         self.organism = ""
-
+        self.evalue = ""
+        
     def mass(self, amino_acids):
         """
         Returns the monoisotopic mass for a protein or peptide.
@@ -116,16 +117,28 @@ class Protein():
         Print summary for top blastp hits.
         '''
         alignment_parser = re.compile(r'\|([A-Z_.0-9]*)\|[ ]{0,1}(.*?)\[(.*?)\]')
+        description_parser = re.compile(r'^(\w{2})\|([\S]*)\|([^>0-9]*).+\s([0-9.]*)$')
         blast_file_out = f'{self.path}/{self.fasta_file}_blast.xml'
         result_handle = open(blast_file_out)
-        blast_record = NCBIXML.read(result_handle)
-        if blast_record.alignments:
-            for idx, alignment in enumerate(blast_record.alignments):
-                title_match = alignment_parser.search(alignment.title)
-                identifier, description, organism = title_match.groups()
-                print(f'{idx + 1:>3}. {identifier:>15}\t{description[:40]:<40}\t{organism:<35}')
-                if idx == 5:
-                    break
+        blast_record = NCBIXML.read(result_handle) # <class 'Bio.Blast.NCBIXML.Blast'>
+        for idx, description in enumerate(blast_record.descriptions):
+            desc_str = str(description)
+            evalue_match = description_parser.search(desc_str)
+            try:
+                groups = evalue_match.groups()
+                print(f'{groups[0]:>2} {groups[1].strip():<15} {groups[2][:40].strip():<40} {groups[3].strip():>15}')
+            except AttributeError:
+                print(description)
+            if idx == 5:
+                break
+        # if blast_record.alignments:
+        #     for idx, alignment in enumerate(blast_record.alignments):
+        #         print(f'{idx:>3} {alignment}')
+        #         title_match = alignment_parser.search(alignment.title)
+        #         identifier, description, organism = title_match.groups()
+        #         print(f'{idx + 1:>3}. {identifier:>15}\t{description[:40]:<40}\t{organism:<35}\t')
+        #         if idx == 5:
+        #             break
 
     def run_blast(self):
         '''

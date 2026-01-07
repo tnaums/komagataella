@@ -100,7 +100,10 @@ class Plasmid():
         # sequences have extra nucleotides
         start_at_atg = re.compile(r'ATG.*')
         new_coding = start_at_atg.search(self.coding_sequence)
-        self.coding_sequence = new_coding.group()
+        try:
+            self.coding_sequence = new_coding.group()
+        except AttributeError:
+            return ""
         for first, second, third in zip(
                 self.coding_sequence[::3],
                 self.coding_sequence[1::3],
