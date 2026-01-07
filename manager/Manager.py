@@ -123,10 +123,10 @@ class Manager():
                 title=md('**Expression Plasmids**'),
             )
             .fmt_number(columns=['kDa', 'pI'], decimals=1)
-            .tab_spanner(
-                label='',
-                columns=['plasmid', 'promoter', 'SSS', 'tag', 'kDa', 'pI']
-            )
+            # .tab_spanner(
+            #     label='',
+            #     columns=['plasmid', 'promoter', 'SSS', 'tag', 'kDa', 'pI']
+            # )
             .tab_style(
                 style=style.text(size='22px', align='center'),
                 locations=loc.body(

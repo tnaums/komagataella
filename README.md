@@ -11,9 +11,29 @@ There are two major use cases:
 1. Choosing a particular plasmid/protein from the DNA sequence database for detailed analysis.
 2. Producing a nicely formated table that summarizes the entire DNA sequence database.
 
+### Science Background
+If you have no idea what this is about, welcome! *Komagataella phaffii* is one of the most-used
+microorganisms for recombinant protein expression (it is a single-celled yeast). This means
+that pieces of DNA--chemically synthesized or PCR generated from another organism's DNA--can be inserted inside the organism to
+produce large amounts of the protein that it encodes. Trying to express foreign proteins this way does not
+always work. But, with advances in genomics and chemical DNA synthesis, this method can be theoretically used
+to produce any protein.
+
+### Motivation
+I have a collection of about 200 engineered strains of *Komagataella phaffii*, each of which
+expresses a different protein. `komagataella` makes analysis of specific recombinant proteins quick and easy, and also enables creation of a summary table for entire databases.
+
+### How komagataella works
+All of the information is computed from simple text files called `fasta` files. Each file has a single header row followed by a series of rows of DNA sequence. When analyzing a single plasmid/protein, a single fasta file is used. When analyzing the entire DNA sequence database, all fasta files are used.
+
 
 ## Installation
-Steps to install and run your project.
+```
+1. git clone https://github.com/tnaums/komagataella.git
+2. pip install -r requirements.txt
+```
+
+`komatagaella` is mostly written in base python. `biopython` is used for both calculating the isoelectric point (pI) and performing and parsing remote blastp. `great-tables` is used to create html tables.
 
 ## Usage
 Example files (DNA sequence files of expression plasmids in fasta format) are included in `data/`. Each file is placed inside of a unique folder; for example: `data/pTAN121/pTAN121.fa`. New files can be added similarly. The DNA sequence fasta files must end in either `*.fa` or `*.fasta`. While use of the `data/` folder is hard coded, it can be changed to point to another location by editing `root = "data/"` line near the top of the main function in main.py.
@@ -70,7 +90,7 @@ Would you like to run/re-run blastp at ncbi? (Y/N) y
 Running remote blastp against nr database...
 ```
 
-If the entire database is selected, a table is produced:
+If the entire database is selected, an html table is produced:
 
 <img src="data/table.png">
 
