@@ -116,8 +116,7 @@ class Protein():
         '''
         Print summary for top blastp hits.
         '''
-        alignment_parser = re.compile(r'\|([A-Z_.0-9]*)\|[ ]{0,1}(.*?)\[(.*?)\]')
-        description_parser = re.compile(r'^(\w{2})\|([\S]*)\|([^>0-9]*).+\s([0-9.]*)$')
+        description_parser = re.compile(r'^(\w{2,4})\|([\S]*)\|([^>0-9]*).+\s([0-9.]*)$')
         blast_file_out = f'{self.path}/{self.fasta_file}_blast.xml'
         result_handle = open(blast_file_out)
         blast_record = NCBIXML.read(result_handle) # <class 'Bio.Blast.NCBIXML.Blast'>
@@ -126,10 +125,10 @@ class Protein():
             evalue_match = description_parser.search(desc_str)
             try:
                 groups = evalue_match.groups()
-                print(f'{groups[0]:>2} {groups[1].strip():<15} {groups[2][:40].strip():<40} {groups[3].strip():>15}')
+                print(f'{groups[0]:>3} {groups[1].strip():>15}   {groups[2][:40].strip():<40} {groups[3].strip():>15}')
             except AttributeError:
                 print(description)
-            if idx == 5:
+            if idx == 4:
                 break
         # if blast_record.alignments:
         #     for idx, alignment in enumerate(blast_record.alignments):

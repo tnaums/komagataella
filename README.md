@@ -58,15 +58,14 @@ Checking for existing blastp results...
 Found existing blastp results file...
 
 
-  1.      QIR83317.1	kilbournase                             	Stenocarpella maydis               
-  2.    KAL2209420.1	subtilisin-like protein                 	Sarocladium strictum               
-  3.    KAH8171103.1	subtilase family protein                	Sarocladium implicatum             
-  4.    KAH7317069.1	peptidase S8/S53 domain-containing prote	Stachybotrys elegans               
-  5.  XP_046006235.1	peptidase S8/S53 domain-containing prote	Microdochium trichocladiopsis      
-  6.    KAI9147171.1	kilbournase                             	Paramyrothecium foliicola          
+ gb      QIR83317.1   kilbournase [Stenocarpella maydis]                   0.0
+ gb    KAL2209420.1   subtilisin-like protein [Sarocladium st              0.0
+ gb    KAH8171103.1   subtilase family protein [Sarocladium i              0.0
+ gb    KAH7317069.1   peptidase S                                          0.0
+ref  XP_046006235.1   peptidase S                                          0.0
 
 
-Would you like to run/re-run blastp at ncbi? (Y/N) Y
+Would you like to run/re-run blastp at ncbi? (Y/N) y
 
 Running remote blastp against nr database...
 ```
