@@ -14,14 +14,14 @@ There are two major use cases:
 ### Science Background
 If you have no idea what this is about, welcome! *Komagataella phaffii* is one of the most-used
 microorganisms for recombinant protein expression (it is a single-celled yeast). This means
-that pieces of DNA--chemically synthesized or PCR generated from another organism's DNA--can be inserted inside the organism to
+that pieces of DNA--chemically synthesized or PCR generated from another organism's DNA--can be inserted inside a host organism to
 produce large amounts of the protein that it encodes. Trying to express foreign proteins this way does not
 always work. But, with advances in genomics and chemical DNA synthesis, this method can be theoretically used
 to produce any protein.
 
 ### Motivation
-I have a collection of about 200 engineered strains of *Komagataella phaffii*, each of which
-expresses a different protein. `komagataella` makes analysis of specific recombinant proteins quick and easy, and also enables creation of a summary table for entire databases.
+My lab has collection of about 200 engineered strains of *Komagataella phaffii*, each of which
+expresses a different protein. `komagataella` makes analysis of specific recombinant proteins quick and easy, and also enables creation of a summary table for an entire database.
 
 ### How komagataella works
 All of the information is computed from simple text files called `fasta` files. Each file has a single header row followed by a series of rows of DNA sequence. When analyzing a single plasmid/protein, a single fasta file is used. When analyzing the entire DNA sequence database, all fasta files are used.
@@ -35,10 +35,12 @@ All of the information is computed from simple text files called `fasta` files. 
 
 `komatagaella` is mostly written in base python. `biopython` is used for both calculating the isoelectric point (pI) and performing and parsing remote blastp. `great-tables` is used to create html tables.
 
-## Usage
-Example files (DNA sequence files of expression plasmids in fasta format) are included in `data/`. Each file is placed inside of a unique folder; for example: `data/pTAN121/pTAN121.fa`. New files can be added similarly. The DNA sequence fasta files must end in either `*.fa` or `*.fasta`. While use of the `data/` folder is hard coded, it can be changed to point to another location by editing `root = "data/"` line near the top of the main function in main.py.
+This software was developed completely in Linux, without any testing on MacOS or Windows. I used the `uv` Python package and project manager.
 
-To run the program, type `python3 main.py`. This will launch an interactive menu.
+## Usage
+Example files (DNA sequence files of expression plasmids in fasta format) are included in `data/`. Each file is placed inside of a unique folder; for example: `data/pTAN121/pTAN121.fa`. New folders with files can be added. The DNA sequence fasta files must end in either `*.fa` or `*.fasta`. While use of the `data/` folder is hard coded, it can be changed to another location by editing `root = "data/"` line near the top of the main function in main.py.
+
+To run the program, type `python3 main.py`. This starts an interactive menu.
 
 
 If a single plasmid/protein is selected, text output is produced:
@@ -70,7 +72,7 @@ pI: 5.18
 Press Enter to continue...
 ```
 
-In single protein/plasmid mode, an optional blastp search can be performed. Since submitting and retrieving results from NCBI is slow, the results are written to `data/plasmid/plasmid.fa_blast.xml`. When present, a summary is shown automatically. Whether the results file exists or not, a new search can optionally be performed.
+In single protein/plasmid mode, an optional blastp search can be performed. Since submitting blastp requests and retrieving results from NCBI is slow, the results are written to `data/plasmid/plasmid.fa_blast.xml`. When present, a summary is shown automatically. Whether the results file exists or not, a new search can optionally be performed.
 
 ```
 Checking for existing blastp results...
