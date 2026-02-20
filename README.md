@@ -16,7 +16,7 @@ If you have no idea what this is about, welcome! *Komagataella phaffii* is one o
 microorganisms for recombinant protein expression (it is a single-celled yeast). This means
 that pieces of DNA--chemically synthesized or PCR generated from another organism's DNA--can be inserted inside a host organism to
 produce large amounts of the protein that it encodes. Trying to express foreign proteins this way does not
-always work. But, with advances in genomics and chemical DNA synthesis, this method can be theoretically used
+always work. But, with advances in genomics and chemical DNA synthesis, this method can theoretically be used
 to produce any protein.
 
 ### Motivation
