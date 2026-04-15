@@ -45,8 +45,7 @@ def menu():
     
 def main():
     greeting()
-    root = "/home/todd/sequences/plasmids/"
-    #root = "data/"
+    root = "data/"
     plasmid_manager = Manager()
     while True:
         selection = menu()
