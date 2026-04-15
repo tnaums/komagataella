@@ -261,6 +261,7 @@ def single_fasta_parser(fasta_file):
         header = first_line[1:]
         for line in fastafile.readlines():
             sequence = sequence + line.rstrip()
+    sequence = sequence.upper()
     return (header, sequence)
 
 def get_folders(root_directory):

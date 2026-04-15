@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.17.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_5065211</BlastOutput_query-ID>
+  <BlastOutput_query-def>unnamed protein product</BlastOutput_query-def>
+  <BlastOutput_query-len>229</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_5065211</Iteration_query-ID>
+  <Iteration_query-def>unnamed protein product</Iteration_query-def>
+  <Iteration_query-len>229</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|XP_011325966.1|</Hit_id>
+  <Hit_def>hypothetical protein FGSG_11280 [Fusarium graminearum PH-1] &gt;gb|ESU18344.1| hypothetical protein FGSG_11280 [Fusarium graminearum PH-1] &gt;emb|CEF88493.1| unnamed protein product [Fusarium graminearum]</Hit_def>
+  <Hit_accession>XP_011325966</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>469.544</Hsp_bit-score>
+      <Hsp_score>1207</Hsp_score>
+      <Hsp_evalue>3.46695e-166</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>229</Hsp_identity>
+      <Hsp_positive>229</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|KAK6703449.1|</Hit_id>
+  <Hit_def>hypothetical protein SNK04_013359 [Fusarium graminearum]</Hit_def>
+  <Hit_accession>KAK6703449</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>466.077</Hsp_bit-score>
+      <Hsp_score>1198</Hsp_score>
+      <Hsp_evalue>8.16829e-165</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>227</Hsp_identity>
+      <Hsp_positive>228</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|EYB22961.1|</Hit_id>
+  <Hit_def>hypothetical protein FG05_11280 [Fusarium graminearum] &gt;emb|CAG1999677.1| unnamed protein product [Fusarium graminearum] &gt;emb|CZS85933.1| unnamed protein product [Fusarium graminearum] &gt;emb|VTO91728.1| unnamed protein product [Fusarium graminearum]</Hit_def>
+  <Hit_accession>EYB22961</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>464.922</Hsp_bit-score>
+      <Hsp_score>1195</Hsp_score>
+      <Hsp_evalue>1.85979e-164</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>227</Hsp_identity>
+      <Hsp_positive>227</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|KAK6700457.1|</Hit_id>
+  <Hit_def>hypothetical protein SNK05_013271 [Fusarium graminearum] &gt;emb|CAF3542328.1| unnamed protein product [Fusarium graminearum] &gt;emb|CAF3595164.1| unnamed protein product [Fusarium graminearum]</Hit_def>
+  <Hit_accession>KAK6700457</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>464.537</Hsp_bit-score>
+      <Hsp_score>1194</Hsp_score>
+      <Hsp_evalue>2.9808e-164</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>226</Hsp_identity>
+      <Hsp_positive>227</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gb|PCD29975.1|</Hit_id>
+  <Hit_def>hypothetical protein FGRA07_10589 [Fusarium graminearum] &gt;emb|CAF3547219.1| unnamed protein product [Fusarium graminearum] &gt;emb|CAG1971699.1| unnamed protein product [Fusarium graminearum]</Hit_def>
+  <Hit_accession>PCD29975</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>463.766</Hsp_bit-score>
+      <Hsp_score>1192</Hsp_score>
+      <Hsp_evalue>5.21575e-164</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>225</Hsp_identity>
+      <Hsp_positive>227</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEVVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGE+VFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gb|WXC50706.1|</Hit_id>
+  <Hit_def>hypothetical protein QX201_010389 [Fusarium graminearum] &gt;emb|CAG1970345.1| unnamed protein product [Fusarium graminearum] &gt;emb|CAG1980108.1| unnamed protein product [Fusarium graminearum]</Hit_def>
+  <Hit_accession>WXC50706</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>463.766</Hsp_bit-score>
+      <Hsp_score>1192</Hsp_score>
+      <Hsp_evalue>5.21575e-164</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>225</Hsp_identity>
+      <Hsp_positive>227</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNDVKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGND+KKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gb|KAI6765170.1|</Hit_id>
+  <Hit_def>hypothetical protein HG531_012269 [Fusarium graminearum]</Hit_def>
+  <Hit_accession>KAI6765170</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>462.611</Hsp_bit-score>
+      <Hsp_score>1189</Hsp_score>
+      <Hsp_evalue>1.8216e-163</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>224</Hsp_identity>
+      <Hsp_positive>227</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNNIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEVVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGN+IKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGE+VFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gb|WXC67430.1|</Hit_id>
+  <Hit_def>hypothetical protein SNK03_013223 [Fusarium graminearum]</Hit_def>
+  <Hit_accession>WXC67430</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>461.84</Hsp_bit-score>
+      <Hsp_score>1187</Hsp_score>
+      <Hsp_evalue>4.01312e-163</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>225</Hsp_identity>
+      <Hsp_positive>227</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFDVYFNSNEALSEKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDF VYFNS+EALSEKIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gb|KAF5234181.1|</Hit_id>
+  <Hit_def>hypothetical protein FAUST_7767 [Fusarium austroamericanum]</Hit_def>
+  <Hit_accession>KAF5234181</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>461.07</Hsp_bit-score>
+      <Hsp_score>1185</Hsp_score>
+      <Hsp_evalue>6.36182e-163</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>224</Hsp_identity>
+      <Hsp_positive>226</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETMAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPSDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAET+AAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGP DRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gb|KAM0364292.1|</Hit_id>
+  <Hit_def>hypothetical protein ACHAPK_010769 [Fusarium culmorum] &gt;gb|KAM0392192.1| hypothetical protein ACHAPZ_011066 [Fusarium culmorum] &gt;gb|KAM0541823.1| hypothetical protein ACHAO7_010319 [Fusarium culmorum] &gt;gb|PTD08535.1| hypothetical protein FCULG_00012507 [Fusarium culmorum] &gt;gb|QPC62947.1| hypothetical protein HYE67_005178 [Fusarium culmorum]</Hit_def>
+  <Hit_accession>KAM0364292</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>460.685</Hsp_bit-score>
+      <Hsp_score>1184</Hsp_score>
+      <Hsp_evalue>1.11316e-162</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>224</Hsp_identity>
+      <Hsp_positive>226</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDTLIRDISSANGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSDKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWDTLIRDISSA GDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALS+KIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|KAM0348201.1|</Hit_id>
+  <Hit_def>hypothetical protein ACHAP4_011037 [Fusarium culmorum]</Hit_def>
+  <Hit_accession>KAM0348201</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>459.529</Hsp_bit-score>
+      <Hsp_score>1181</Hsp_score>
+      <Hsp_evalue>2.9551e-162</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>223</Hsp_identity>
+      <Hsp_positive>226</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>228</Hsp_align-len>
+      <Hsp_qseq>PTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>PTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNQASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSDKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>PTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELN+ASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALS+KIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gb|KAM0387044.1|</Hit_id>
+  <Hit_def>hypothetical protein ACHAQC_011110 [Fusarium culmorum]</Hit_def>
+  <Hit_accession>KAM0387044</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>459.144</Hsp_bit-score>
+      <Hsp_score>1180</Hsp_score>
+      <Hsp_evalue>3.8032e-162</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>223</Hsp_identity>
+      <Hsp_positive>226</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDTLIRDISSANGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNQASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSDKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWDTLIRDISSA GDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELN+ASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALS+KIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gb|KAM0294521.1|</Hit_id>
+  <Hit_def>hypothetical protein ACHAPM_011168 [Fusarium culmorum] &gt;gb|KAM0369314.1| hypothetical protein ACHAPY_011021 [Fusarium culmorum]</Hit_def>
+  <Hit_accession>KAM0294521</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>457.988</Hsp_bit-score>
+      <Hsp_score>1177</Hsp_score>
+      <Hsp_evalue>1.07831e-161</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>20</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>223</Hsp_identity>
+      <Hsp_positive>225</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>228</Hsp_align-len>
+      <Hsp_qseq>PTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>PTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDTLIRDISSANGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSDKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>PTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWDTLIRDISSA GDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALS+KIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gb|QPC80319.1|</Hit_id>
+  <Hit_def>hypothetical protein HYE68_011071 [Fusarium pseudograminearum]</Hit_def>
+  <Hit_accession>QPC80319</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>456.833</Hsp_bit-score>
+      <Hsp_score>1174</Hsp_score>
+      <Hsp_evalue>3.76575e-161</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>222</Hsp_identity>
+      <Hsp_positive>225</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVSIGNDIKKAGGIPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFTVYFNSNEALSEKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL++IGNDIKKAGG PIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDF VYFNS+EALSEKIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gb|KAF0641300.1|</Hit_id>
+  <Hit_def>hypothetical protein FPSE5266_11163 [Fusarium pseudograminearum]</Hit_def>
+  <Hit_accession>KAF0641300</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>456.062</Hsp_bit-score>
+      <Hsp_score>1172</Hsp_score>
+      <Hsp_evalue>5.65095e-161</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>221</Hsp_identity>
+      <Hsp_positive>226</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAKGDNRGVSGSTTVSWKSSGRWDALIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNNIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAKTIAAAGNVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP +GDNRGVSGSTTVSWK SGRWD LIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGN+IKKAGGTPIFITSLTRRTFSGGQVVENLKDWAA+TIAAAG+VGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>ref|XP_009262555.1|</Hit_id>
+  <Hit_def>hypothetical protein FPSE_11163 [Fusarium pseudograminearum CS3096] &gt;gb|EKJ68659.1| hypothetical protein FPSE_11163 [Fusarium pseudograminearum CS3096]</Hit_def>
+  <Hit_accession>XP_009262555</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>453.751</Hsp_bit-score>
+      <Hsp_score>1166</Hsp_score>
+      <Hsp_evalue>5.18143e-160</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>220</Hsp_identity>
+      <Hsp_positive>225</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAKGDNRGVSGSTTVSWKSSGRWDALIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNNIRKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRRDFAVYFNSNEALSEKIKKGEYATGGE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP +GDNRGVSGSTTVSWK SGRWD LIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGN+I+KAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKR DFAVYFNS+EALSEKIKKGEYATGGE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gb|UZP43219.1|</Hit_id>
+  <Hit_def>hypothetical protein NXS19_011035 [Fusarium pseudograminearum]</Hit_def>
+  <Hit_accession>UZP43219</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>453.366</Hsp_bit-score>
+      <Hsp_score>1165</Hsp_score>
+      <Hsp_evalue>8.58205e-160</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>220</Hsp_identity>
+      <Hsp_positive>225</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAKGDNRGVSGSTTVSWKSSGRWDALIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNNIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAKTIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSNEALSEKIKKGEYATGVE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP +GDNRGVSGSTTVSWK SGRWD LIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL+NIGN+IKKAGGTPIFITSLTRRTFSGGQVVENLKDWAA+TIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNS+EALSEKIKKGEYATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gb|RGP62597.1|</Hit_id>
+  <Hit_def>putative acetylesterase [Fusarium sporotrichioides]</Hit_def>
+  <Hit_accession>RGP62597</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>436.417</Hsp_bit-score>
+      <Hsp_score>1121</Hsp_score>
+      <Hsp_evalue>4.4687e-153</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>210</Hsp_identity>
+      <Hsp_positive>220</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYIKAPAQGDNRGVSGSTTVSWKSSGRWDTLLSDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVSIGNDIKKVGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGEVGAEHLELNKASTDYVNAIGAQNSDSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRQDFAAYFTSNEALSEKIKNGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSY+KAP +GDNRGVSGSTTVSWK SGRWDTL+ DISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL++IGNDIKK GGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAG+VGAE+LELNKASTDYVNAIGAQN+DSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKR DFA YF S+EALSEKIK GE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>dbj|GKU07120.1|</Hit_id>
+  <Hit_def>unnamed protein product [Fusarium langsethiae] &gt;dbj|GKU21809.1| unnamed protein product [Fusarium langsethiae]</Hit_def>
+  <Hit_accession>GKU07120</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>435.261</Hsp_bit-score>
+      <Hsp_score>1118</Hsp_score>
+      <Hsp_evalue>1.08641e-152</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>209</Hsp_identity>
+      <Hsp_positive>220</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRATKPPRFFLIGDSTVAVNGGWGDGLLSYIKAPAQGDNRGVSGSTTVSWKSSGRWDTLLSDISSAKGDFEPVVTIQFGHNDQKVMQLNEFHSNLVSIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGEVGAEYLQLNKASTDYVNAIGAQNSDSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRQDFAAYFTSNEALSEKIKNGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SPTSRA KPPRFFLIGDSTVAVNGGWGDGLLSY+KAP +GDNRGVSGSTTVSWK SGRWDTL+ DISSAKGDFEPVVTIQFGHNDQKVMQL+EFHSNL++IGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAG+VGAEYL+LNKASTDYVNAIGAQN+DSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKR DFA YF S+EALSEKIK GE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gb|KPA38286.1|</Hit_id>
+  <Hit_def>gdsl lipase acylhydrolase [Fusarium langsethiae]</Hit_def>
+  <Hit_accession>KPA38286</Hit_accession>
+  <Hit_len>258</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>435.647</Hsp_bit-score>
+      <Hsp_score>1119</Hsp_score>
+      <Hsp_evalue>1.14981e-152</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>258</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>209</Hsp_identity>
+      <Hsp_positive>220</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRATKPPRFFLIGDSTVAVNGGWGDGLLSYIKAPAQGDNRGVSGSTTVSWKSSGRWDTLLSDISSAKGDFEPVVTIQFGHNDQKVMQLNEFHSNLVSIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGEVGAEYLQLNKASTDYVNAIGAQNSDSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRQDFAAYFTSNEALSEKIKNGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SPTSRA KPPRFFLIGDSTVAVNGGWGDGLLSY+KAP +GDNRGVSGSTTVSWK SGRWDTL+ DISSAKGDFEPVVTIQFGHNDQKVMQL+EFHSNL++IGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAG+VGAEYL+LNKASTDYVNAIGAQN+DSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKR DFA YF S+EALSEKIK GE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|XP_025594322.1|</Hit_id>
+  <Hit_def>SGNH hydrolase-type esterase domain-containing protein [Fusarium venenatum] &gt;gb|KAG8361189.1| hypothetical protein FVEN_g902 [Fusarium venenatum] &gt;gb|KAH6967272.1| SGNH hydrolase-type esterase domain-containing protein [Fusarium venenatum] &gt;gb|KAM0413034.1| hypothetical protein ACHAPD_008104 [Fusarium lateritium] &gt;emb|CEI70608.1| unnamed protein product [Fusarium venenatum]</Hit_def>
+  <Hit_accession>XP_025594322</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>431.024</Hsp_bit-score>
+      <Hsp_score>1107</Hsp_score>
+      <Hsp_evalue>5.10271e-151</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>210</Hsp_identity>
+      <Hsp_positive>216</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPKFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVSIGNDIKNAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAGYLELNKASTDYVNAIGAQNSDYYNWGPGDRTHLNPPGEIVFGRMVTDLLLEKRQDFVVYFTSNEALSEKIKNGEFANGEE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPP+FFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL++IGNDIK AGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGA YLELNKASTDYVNAIGAQN+D YNWGPGDRTHLNP GEIVFGRMV DLLLEKR DF VYF S+EALSEKIK GE+A G E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gb|KAN1651601.1|</Hit_id>
+  <Hit_def>hypothetical protein ACKRZQ_004473 [Fusarium sp. IMII-1]</Hit_def>
+  <Hit_accession>KAN1651601</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>427.943</Hsp_bit-score>
+      <Hsp_score>1099</Hsp_score>
+      <Hsp_evalue>9.96594e-150</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>206</Hsp_identity>
+      <Hsp_positive>216</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAAKPPKFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSNGRWDTLIRDIGSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVSIGNDIKNAGGTPIFITSLTRRTFSGGQVVENLKDWAAQTIAAAGDVGVEYLELNKVSTDYVNAIGAENADYYNWGPGDRTHLNPPGEIVFGRMVIDLLLEKRQDFAAYFTSNEALSQKIKNGEFATGEE</Hsp_hseq>
+      <Hsp_midline>SPTSRAAKPP+FFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK +GRWDTLIRDI SAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL++IGNDIK AGGTPIFITSLTRRTFSGGQVVENLKDWAA+TIAAAGDVG EYLELNK STDYVNAIGA+NAD YNWGPGDRTHLNP GEIVFGRMV+DLLLEKR DFA YF S+EALS+KIK GE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|XP_044704559.1|</Hit_id>
+  <Hit_def>hypothetical protein FPOAC1_007423 [Fusarium poae] &gt;gb|KAG8668060.1| hypothetical protein FPOAC1_007423 [Fusarium poae] &gt;gb|KAL3595804.1| hypothetical protein FPOAC2_10172 [Fusarium poae] &gt;gb|OBS23004.1| hypothetical protein FPOA_09323 [Fusarium poae]</Hit_def>
+  <Hit_accession>XP_044704559</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>427.172</Hsp_bit-score>
+      <Hsp_score>1097</Hsp_score>
+      <Hsp_evalue>1.94555e-149</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>205</Hsp_identity>
+      <Hsp_positive>217</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>NPVSKAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAQGDNRGVSGSTTVSWKSSGRWDTLIRDINSAKGDFEPVVTIQFGHNDQKVMQLDQFHSNLVSIGNDIKRAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAARDVGAEYLELNKASTDYVNAIGAQNSDYYNWGPGDRTHLNPPGEIVFGRMVLDLLLEKRQDFTTYFTSNKALSEKIKNGEFATGEE</Hsp_hseq>
+      <Hsp_midline>+P S+AAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP +GDNRGVSGSTTVSWK SGRWDTLIRDI+SAKGDFEPVVTIQFGHNDQKVMQLD+FHSNL++IGNDIK+AGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAA DVGAEYLELNKASTDYVNAIGAQN+D YNWGPGDRTHLNP GEIVFGRMVLDLLLEKR DF  YF S++ALSEKIK GE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gb|KAM0231307.1|</Hit_id>
+  <Hit_def>hypothetical protein ACHAPO_008692 [Fusarium lateritium] &gt;gb|XEV07292.1| hypothetical protein FSHL1_012579 [Fusarium sambucinum]</Hit_def>
+  <Hit_accession>KAM0231307</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>426.787</Hsp_bit-score>
+      <Hsp_score>1096</Hsp_score>
+      <Hsp_evalue>2.91918e-149</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>206</Hsp_identity>
+      <Hsp_positive>216</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAEKPPKFFLIGDSTVAVNGGWGDGLLSYLKAPAQGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVSIGNDIKNAGGTPIFITSLSRRTFSGGQVVENLKDWAAETIAAAGDVGAGYLELNKASTDYVNAIGAQNSDYYNWGPGDRTHLNPPGEIVFGRMVTDLLLEKRQDFAVYFTSNQVLSEKIRNGEFATGEE</Hsp_hseq>
+      <Hsp_midline>SPTSRA KPP+FFLIGDSTVAVNGGWGDGLLSYLKAP +GDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL++IGNDIK AGGTPIFITSL+RRTFSGGQVVENLKDWAAETIAAAGDVGA YLELNKASTDYVNAIGAQN+D YNWGPGDRTHLNP GEIVFGRMV DLLLEKR DFAVYF S++ LSEKI+ GE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gb|KAL6914900.1|</Hit_id>
+  <Hit_def>hypothetical protein FSST1_012660 [Fusarium sambucinum]</Hit_def>
+  <Hit_accession>KAL6914900</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>426.017</Hsp_bit-score>
+      <Hsp_score>1094</Hsp_score>
+      <Hsp_evalue>5.69878e-149</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>205</Hsp_identity>
+      <Hsp_positive>216</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAEKPPKFFLIGDSTVAVNGGWGDGLLSYLKAPAQGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKIMQLDEFHSNLVSIGNDIKNAGGTPIFITSLSRRTFSGGQVVENLKDWAAETIAAAGDVGAGYLELNKASTDYVNAIGAQNSDYYNWGPGDRTHLNPPGEIVFGRMVTDLLLEKRQDFAVYFTSNQVLSEKIRNGEFATGEE</Hsp_hseq>
+      <Hsp_midline>SPTSRA KPP+FFLIGDSTVAVNGGWGDGLLSYLKAP +GDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQK+MQLDEFHSNL++IGNDIK AGGTPIFITSL+RRTFSGGQVVENLKDWAAETIAAAGDVGA YLELNKASTDYVNAIGAQN+D YNWGPGDRTHLNP GEIVFGRMV DLLLEKR DFAVYF S++ LSEKI+ GE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gb|KAM0493513.1|</Hit_id>
+  <Hit_def>hypothetical protein ACHAP8_009144 [Fusarium lateritium]</Hit_def>
+  <Hit_accession>KAM0493513</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>425.246</Hsp_bit-score>
+      <Hsp_score>1092</Hsp_score>
+      <Hsp_evalue>1.20126e-148</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>205</Hsp_identity>
+      <Hsp_positive>215</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPTSRAEKPPKFFLIGDSTVAVNGGWGDGLLSYLKAPAQGDNRGVSGSTTVSWKSSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLVSIGNDIKNAGGTPIFITSLSRRTFSGGQVVENLKDWAAETIAAAGDVGAGYLEFNKASTDYVNAIGAQNSDYYNWGPGDRTHLNPPGEIVFGRMVTDLLLEKRQDFAVYFTSNQVLSEKIRNGEFATGEE</Hsp_hseq>
+      <Hsp_midline>SPTSRA KPP+FFLIGDSTVAVNGGWGDGLLSYLKAP +GDNRGVSGSTTVSWK SGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNL++IGNDIK AGGTPIFITSL+RRTFSGGQVVENLKDWAAETIAAAGDVGA YLE NKASTDYVNAIGAQN+D YNWGPGDRTHLNP GEIVFGRMV DLLLEKR DFAVYF S++ LSEKI+ GE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gb|KAJ4138596.1|</Hit_id>
+  <Hit_def>hypothetical protein NW768_002446 [Fusarium equiseti]</Hit_def>
+  <Hit_accession>KAJ4138596</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>419.468</Hsp_bit-score>
+      <Hsp_score>1077</Hsp_score>
+      <Hsp_evalue>1.70707e-146</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>199</Hsp_identity>
+      <Hsp_positive>217</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>NPTPRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPAEGDNRGVSGSTTVSWKSSGRWDALLKDVGAAKNDFEPVVTIQFGHNDQKVMQLDEFHSNLVSIGNDIKKAGGTPIFITSLTRRTFSGGEVVQNLKDWAAETISAAADVGGQYLELNKASTDYINAIGSQNADFYNWGPGDRTHLNPPGEIVFGRMVVDLLLEKRGDFSSYFDSNEALSEKIKKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>+PT RAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAP EGDNRGVSGSTTVSWK SGRWD L++D+ +AK DFEPVVTIQFGHNDQKVMQLDEFHSNL++IGNDIKKAGGTPIFITSLTRRTFSGG+VV+NLKDWAAETI+AA DVG +YLELNKASTDY+NAIG+QNAD YNWGPGDRTHLNP GEIVFGRMV+DLLLEKRGDF+ YF+S+EALSEKIKKGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>ref|XP_045981865.1|</Hit_id>
+  <Hit_def>SGNH hydrolase-type esterase domain-containing protein [Fusarium flagelliforme] &gt;gb|KAH7183433.1| SGNH hydrolase-type esterase domain-containing protein [Fusarium flagelliforme] &gt;gb|RFN48471.1| putative acetylesterase [Fusarium flagelliforme]</Hit_def>
+  <Hit_accession>XP_045981865</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>413.305</Hsp_bit-score>
+      <Hsp_score>1061</Hsp_score>
+      <Hsp_evalue>5.00056e-144</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>195</Hsp_identity>
+      <Hsp_positive>215</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>TPTPRAAKPPKFFLIGDSTVAVNGGWGDGLLSYLKTPAEGDNRGVSGSTTVSWKSSGRWDTLLKDVGAAKNDFEPVVTVQFGHNDQKVMQLDEFHSNLVSIGNDIKKAGGTPIFITSLTRRTFSGGEVVQNLKEWAAETISAAADVGAQYLELNKASTDYVNAIGSQNADFYNWGPGDRTHLNPPGEIVFGRMVIDLLLEKRRDFSSYFASNKALGEKIKKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>+PT RAAKPP+FFLIGDSTVAVNGGWGDGLLSYLK P EGDNRGVSGSTTVSWK SGRWDTL++D+ +AK DFEPVVT+QFGHNDQKVMQLDEFHSNL++IGNDIKKAGGTPIFITSLTRRTFSGG+VV+NLK+WAAETI+AA DVGA+YLELNKASTDYVNAIG+QNAD YNWGPGDRTHLNP GEIVFGRMV+DLLLEKR DF+ YF S++AL EKIKKGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gb|KAL4728034.1|</Hit_id>
+  <Hit_def>hypothetical protein ACLX1H_004742 [Fusarium chlamydosporum]</Hit_def>
+  <Hit_accession>KAL4728034</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>408.683</Hsp_bit-score>
+      <Hsp_score>1049</Hsp_score>
+      <Hsp_evalue>3.59843e-142</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>193</Hsp_identity>
+      <Hsp_positive>214</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>AAVSRVAKPPRFFLIGDSTVAVDGGWGDGLLSYLEAPAKGDNRGVSGSTTVSWKSSGRWESLLRDISTAKSDFEPVVTVQFGHNDQKVMQLDEFHSNLVSIGNDIKESGGTPIFITSLTRRTFSDGEVVQNLKEWAAETISAATDIGVEYLELNKASTDYVNAIGAQNADFYNWGPGDRTHLNPPGEIVFGRMVLDLLLEKRGDFSSYFTSNEALSEKIKNGEFATGEE</Hsp_hseq>
+      <Hsp_midline>+  SR AKPPRFFLIGDSTVAV+GGWGDGLLSYL+AP +GDNRGVSGSTTVSWK SGRW++L+RDIS+AK DFEPVVT+QFGHNDQKVMQLDEFHSNL++IGNDIK++GGTPIFITSLTRRTFS G+VV+NLK+WAAETI+AA D+G EYLELNKASTDYVNAIGAQNAD YNWGPGDRTHLNP GEIVFGRMVLDLLLEKRGDF+ YF S+EALSEKIK GE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>emb|CAG7557490.1|</Hit_id>
+  <Hit_def>unnamed protein product [Fusarium equiseti]</Hit_def>
+  <Hit_accession>CAG7557490</Hit_accession>
+  <Hit_len>318</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>407.527</Hsp_bit-score>
+      <Hsp_score>1046</Hsp_score>
+      <Hsp_evalue>1.29319e-140</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>223</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>193</Hsp_identity>
+      <Hsp_positive>211</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>223</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGE</Hsp_qseq>
+      <Hsp_hseq>TPTPRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKNPAEGDNRGVSGSTTVSWKSSGRWDTLLKDVGAAKSEFEPVVTIQFGHNDQKVMQLDEFHSNLVNIGNDIKKAGGTPIFITSLTRRTFSGGEVVQNLKDWAAETISAATDVGAQHLELNKASTDYVNAIGSQNADFYNWGPGDRTHLNPPGEIVFGRMVVDLLLENRGDFSAYFDSNEALSEKIKNGD</Hsp_hseq>
+      <Hsp_midline>+PT RAAKPPRFFLIGDSTVAVNGGWGDGLLSYLK P EGDNRGVSGSTTVSWK SGRWDTL++D+ +AK +FEPVVTIQFGHNDQKVMQLDEFHSNL+NIGNDIKKAGGTPIFITSLTRRTFSGG+VV+NLKDWAAETI+AA DVGA++LELNKASTDYVNAIG+QNAD YNWGPGDRTHLNP GEIVFGRMV+DLLLE RGDF+ YF+S+EALSEKIK G+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gb|EWY82418.1|</Hit_id>
+  <Hit_def>hypothetical protein FOYG_14516 [Fusarium oxysporum NRRL 32931]</Hit_def>
+  <Hit_accession>EWY82418</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>392.119</Hsp_bit-score>
+      <Hsp_score>1006</Hsp_score>
+      <Hsp_evalue>1.14767e-135</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>185</Hsp_identity>
+      <Hsp_positive>211</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPVAQAAKPPQFFLIGDSTVAVDGGWGNGLLSYLNAPAKGDNRGVSGSTTVSWKSNGRWDTLIKDISAAKAEFEPVVTIQFGHNDQKVMQLNEFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEKRGDFSSYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP ++AAKPP+FFLIGDSTVAV+GGWG+GLLSYL AP +GDNRGVSGSTTVSWK +GRWDTLI+DIS+AK +FEPVVTIQFGHNDQKVMQL+EFH+NL++IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLEKRGDF+ YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gb|KAF5265680.1|</Hit_id>
+  <Hit_def>hypothetical protein FOXYS1_3499 [Fusarium oxysporum] &gt;gb|RKL51609.1| hypothetical protein BFJ70_g326 [Fusarium oxysporum]</Hit_def>
+  <Hit_accession>KAF5265680</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>390.578</Hsp_bit-score>
+      <Hsp_score>1002</Hsp_score>
+      <Hsp_evalue>4.56717e-135</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>185</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPLARAAKPPQFFLIGDSTVAVDGGWGNGLLSYLHAPAKGDNRGVSGSTTVSWKSNGRWDTLIKDISAAKAEFEPVVTIQFGHNDQKVMQLNEFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEKRDDFSSYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP +RAAKPP+FFLIGDSTVAV+GGWG+GLLSYL AP +GDNRGVSGSTTVSWK +GRWDTLI+DIS+AK +FEPVVTIQFGHNDQKVMQL+EFH+NL++IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLEKR DF+ YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>emb|SCO91708.1|</Hit_id>
+  <Hit_def>probable acetylesterase [Fusarium oxysporum]</Hit_def>
+  <Hit_accession>SCO91708</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>390.193</Hsp_bit-score>
+      <Hsp_score>1001</Hsp_score>
+      <Hsp_evalue>7.23747e-135</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>185</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPVAQAAKPPQFFLIGDSTVAVDGGWGNGLLSYLNAPAKGDNRGVSGSTTVSWKSNGRWDTLIKDISAAKVEFEPVVTIQFGHNDQKVMQLDEFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEKRDDFSSYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP ++AAKPP+FFLIGDSTVAV+GGWG+GLLSYL AP +GDNRGVSGSTTVSWK +GRWDTLI+DIS+AK +FEPVVTIQFGHNDQKVMQLDEFH+NL++IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLEKR DF+ YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>ref|XP_031078612.1|</Hit_id>
+  <Hit_def>putative acetylesterase [Fusarium proliferatum ET1] &gt;emb|CZR38019.1| probable acetylesterase [Fusarium proliferatum ET1]</Hit_def>
+  <Hit_accession>XP_031078612</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>390.193</Hsp_bit-score>
+      <Hsp_score>1001</Hsp_score>
+      <Hsp_evalue>8.81607e-135</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>184</Hsp_identity>
+      <Hsp_positive>206</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPVARAAKPPQFFLIGDSTVAVDGGWGNGFLSYLKAPARGDNRGVSGSTTVSWKSNGRWDTLIKDVGTAKADFEPVVTIQFGHNDQKVMQLDEFHANLVEIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEAREDFSSYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP +RAAKPP+FFLIGDSTVAV+GGWG+G LSYLKAP  GDNRGVSGSTTVSWK +GRWDTLI+D+ +AK DFEPVVTIQFGHNDQKVMQLDEFH+NL+ IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLE R DF+ YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gb|EWZ30954.1|</Hit_id>
+  <Hit_def>hypothetical protein FOZG_15385 [Fusarium oxysporum Fo47] &gt;gb|EXK36313.1| hypothetical protein FOMG_09507 [Fusarium oxysporum f. sp. melonis 26406] &gt;gb|EXL52281.1| hypothetical protein FOCG_08095 [Fusarium oxysporum f. sp. radicis-lycopersici 26381] &gt;gb|KAM5386030.1| hypothetical protein ACJA88_002180 [Fusarium oxysporum] &gt;gb|PCD24897.1| hypothetical protein AU210_014012 [Fusarium oxysporum f. sp. radicis-cucumerinum] &gt;gb|RKK08749.1| hypothetical protein BFJ65_g16412 [Fusarium oxysporum f. sp. cepae] &gt;gb|RYC82402.1| hypothetical protein BFJ63_vAg14708 [Fusarium oxysporum f. sp. narcissi] &gt;gb|WKT52010.1| SGNH hydrolase-type esterase domain [Fusarium oxysporum f. sp. vasinfectum]</Hit_def>
+  <Hit_accession>EWZ30954</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>389.808</Hsp_bit-score>
+      <Hsp_score>1000</Hsp_score>
+      <Hsp_evalue>1.0739e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>184</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPVAQAAKPPQFFLIGDSTVAVDGGWGNGLLSYLNAPAKGDNRGVSGSTTVSWKSNGRWDTLIKDISAAKAEFEPVVTIQFGHNDQKVMQLNEFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEKRDDFSSYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP ++AAKPP+FFLIGDSTVAV+GGWG+GLLSYL AP +GDNRGVSGSTTVSWK +GRWDTLI+DIS+AK +FEPVVTIQFGHNDQKVMQL+EFH+NL++IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLEKR DF+ YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gb|KAG5659858.1|</Hit_id>
+  <Hit_def>hypothetical protein KAF25_002417 [Fusarium avenaceum]</Hit_def>
+  <Hit_accession>KAG5659858</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>389.423</Hsp_bit-score>
+      <Hsp_score>999</Hsp_score>
+      <Hsp_evalue>1.30813e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>185</Hsp_identity>
+      <Hsp_positive>207</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>TPLVRAAKPPQFFLIGDSTVAVNGGWGDGFLSYLNSPAEGDNRGVSGSTTVSWKSSGRWDKLIQDIGAAKTDFEPVVTIQFGHNDQKVMGLDDFHTNLVDIGNQIKEAGGTPIFITSLTRRTFQNGEVVQNLKDWAAETISAAGDVGADYLELNKASTDYVNSIGETDSQYYNWGPGDRTHLNPPGEVVFGRMVLDLLLEKRDDFSQYFTSNEALSDKIKKGEFATGEE</Hsp_hseq>
+      <Hsp_midline>+P  RAAKPP+FFLIGDSTVAVNGGWGDG LSYL +P EGDNRGVSGSTTVSWK SGRWD LI+DI +AK DFEPVVTIQFGHNDQKVM LD+FH+NL++IGN IK+AGGTPIFITSLTRRTF  G+VV+NLKDWAAETI+AAGDVGA+YLELNKASTDYVN+IG  ++  YNWGPGDRTHLNP GE+VFGRMVLDLLLEKR DF+ YF S+EALS+KIKKGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>gb|KAI1037567.1|</Hit_id>
+  <Hit_def>hypothetical protein LB505_011443 [Fusarium chuoi]</Hit_def>
+  <Hit_accession>KAI1037567</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>389.423</Hsp_bit-score>
+      <Hsp_score>999</Hsp_score>
+      <Hsp_evalue>1.50847e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>183</Hsp_identity>
+      <Hsp_positive>208</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPVTRAAKPPQFFLIGDSTVAVDGGWGNGFLSYLNAPAKGDNRGVSGSTTVSWKSNGRWDTLIKDVGAAKADFEPVVTIQFGHNDQKVMQLDEFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGSENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEAREDFSSYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP +RAAKPP+FFLIGDSTVAV+GGWG+G LSYL AP +GDNRGVSGSTTVSWK +GRWDTLI+D+ +AK DFEPVVTIQFGHNDQKVMQLDEFH+NL++IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG++NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLE R DF+ YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gb|KAH6954643.1|</Hit_id>
+  <Hit_def>SGNH hydrolase-type esterase domain-containing protein [Fusarium avenaceum] &gt;gb|KAI6758567.1| hypothetical protein HG530_010807 [Fusarium avenaceum]</Hit_def>
+  <Hit_accession>KAH6954643</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>389.423</Hsp_bit-score>
+      <Hsp_score>999</Hsp_score>
+      <Hsp_evalue>1.5589e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>186</Hsp_identity>
+      <Hsp_positive>206</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>TPLVRAAKPPHFFLIGDSTVAVNGGWGDGFLSYLNSPAEGDNRGVSGSTTVSWKSSGRWDKLIQDIGAAKTDFEPVVTIQFGHNDQKVMGLDDFHTNLVDIGNQIKEAGGTPIFITSLTRRTFQNGEVVQNLKDWAAETISAAGDVGADYLELNKASTDYVNSIGETDSQYYNWGPGDRTHLNPPGEIVFGRMVLDLLLEKRDDFSQYFTSNEALSDKIKKGEFATGEE</Hsp_hseq>
+      <Hsp_midline>+P  RAAKPP FFLIGDSTVAVNGGWGDG LSYL +P EGDNRGVSGSTTVSWK SGRWD LI+DI +AK DFEPVVTIQFGHNDQKVM LD+FH+NL++IGN IK+AGGTPIFITSLTRRTF  G+VV+NLKDWAAETI+AAGDVGA+YLELNKASTDYVN+IG  ++  YNWGPGDRTHLNP GEIVFGRMVLDLLLEKR DF+ YF S+EALS+KIKKGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>emb|SPJ73322.1|</Hit_id>
+  <Hit_def>probable acetylesterase [Fusarium torulosum]</Hit_def>
+  <Hit_accession>SPJ73322</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>389.037</Hsp_bit-score>
+      <Hsp_score>998</Hsp_score>
+      <Hsp_evalue>2.47032e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>186</Hsp_identity>
+      <Hsp_positive>206</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>TPLIRAAKPPHFFLIGDSTVAVDGGWGDGFLSYLNSPAEGDNRGVSGSTTVSWKSSGRWDKLIQDIGAAKTDFEPVVTIQFGHNDQKVMGLDEFHTNLVDIGNQIKKAGGTPIFITSLTRRTFQNGEVVQNLKDWAAETISAAGNVGAEFLELNKASTDYVNSIGETDSQYYNWGPGDRTHLNPPGEIVFGRMVLDLLLEKRDDFSQYFTSNEALSDKIKKGEFATGEE</Hsp_hseq>
+      <Hsp_midline>+P  RAAKPP FFLIGDSTVAV+GGWGDG LSYL +P EGDNRGVSGSTTVSWK SGRWD LI+DI +AK DFEPVVTIQFGHNDQKVM LDEFH+NL++IGN IKKAGGTPIFITSLTRRTF  G+VV+NLKDWAAETI+AAG+VGAE+LELNKASTDYVN+IG  ++  YNWGPGDRTHLNP GEIVFGRMVLDLLLEKR DF+ YF S+EALS+KIKKGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gb|KAJ4012541.1|</Hit_id>
+  <Hit_def>hypothetical protein NW752_008239 [Fusarium irregulare] &gt;gb|KAJ4019507.1| hypothetical protein NW766_003241 [Fusarium irregulare]</Hit_def>
+  <Hit_accession>KAJ4012541</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>388.652</Hsp_bit-score>
+      <Hsp_score>997</Hsp_score>
+      <Hsp_evalue>3.17864e-134</Hsp_evalue>
+      <Hsp_query-from>12</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>30</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>184</Hsp_identity>
+      <Hsp_positive>204</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>218</Hsp_align-len>
+      <Hsp_qseq>FFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>FFLIGDSTVAVDGGWGDGLLSYLKSPAEGDNRGVSGSTTVSWKSSGRWDTLLKDVGAAKNDFEPVVTIQFGHNDQKVMELDAFHSNLVSIGNDIKNAGGTPIFITSLTRRTFSGGQVVQNLKEWAAETISAATEVGAQYLELNKASTDYVNSIGSQNADFYNWGPGDRTHLNPPGEIVFGRMVVDLLLEKRADFTTYFDSNEALSEKIKNGEFATGDE</Hsp_hseq>
+      <Hsp_midline>FFLIGDSTVAV+GGWGDGLLSYLK+P EGDNRGVSGSTTVSWK SGRWDTL++D+ +AK DFEPVVTIQFGHNDQKVM+LD FHSNL++IGNDIK AGGTPIFITSLTRRTFSGGQVV+NLK+WAAETI+AA +VGA+YLELNKASTDYVN+IG+QNAD YNWGPGDRTHLNP GEIVFGRMV+DLLLEKR DF  YF+S+EALSEKIK GE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>gb|KAI7771412.1|</Hit_id>
+  <Hit_def>hypothetical protein LZL87_010852 [Fusarium oxysporum] &gt;gb|KAL9564757.1| hypothetical protein ACKAV7_011209 [Fusarium commune]</Hit_def>
+  <Hit_accession>KAI7771412</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>388.652</Hsp_bit-score>
+      <Hsp_score>997</Hsp_score>
+      <Hsp_evalue>3.43213e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>182</Hsp_identity>
+      <Hsp_positive>208</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPVAQAAKPPQFFLIGDSTVAVDGGWGNGFLSYLNTPAKGDNRGVSGSTTVSWKSNGRWDTLIKDIGAAKADFEPVVTIQFGHNDQKVMQLDEFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVIQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEKREDFSLYFTPNQALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP ++AAKPP+FFLIGDSTVAV+GGWG+G LSYL  P +GDNRGVSGSTTVSWK +GRWDTLI+DI +AK DFEPVVTIQFGHNDQKVMQLDEFH+NL++IGN IK AGGTPIFITSLTRRTF  G+V++NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLEKR DF++YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gb|EXA36616.1|</Hit_id>
+  <Hit_def>hypothetical protein FOVG_12522 [Fusarium oxysporum f. sp. pisi HDV247] &gt;gb|EXK84104.1| hypothetical protein FOQG_11814 [Fusarium oxysporum f. sp. raphani 54005] &gt;gb|EXL73333.1| hypothetical protein FOPG_11386 [Fusarium oxysporum f. sp. conglutinans race 2 54008] &gt;gb|KAF6525104.1| hypothetical protein HZS61_010899 [Fusarium oxysporum f. sp. conglutinans] &gt;gb|KAG7428574.1| Rhamnogalacturonan acetylesterase RhgT [Fusarium oxysporum f. sp. raphani] &gt;gb|KAI8411886.1| hypothetical protein FOFC_08495 [Fusarium oxysporum]</Hit_def>
+  <Hit_accession>EXA36616</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>388.652</Hsp_bit-score>
+      <Hsp_score>997</Hsp_score>
+      <Hsp_evalue>3.46995e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>184</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPVAQAAKPPQFFLIGDSTVAVDGGWGNGLLSYLNAPAKGDNRGVSGSTTVSWKSNGRWDTLIKDISAAKVEFEPVVTIQFGHNDQKVMQLNEFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEKRDDFSSYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP ++AAKPP+FFLIGDSTVAV+GGWG+GLLSYL AP +GDNRGVSGSTTVSWK +GRWDTLI+DIS+AK +FEPVVTIQFGHNDQKVMQL+EFH+NL++IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLEKR DF+ YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>ref|XP_031017054.1|</Hit_id>
+  <Hit_def>uncharacterized protein FIESC28_04700 [Fusarium coffeatum] &gt;gb|RBR21857.1| hypothetical protein FIESC28_04700 [Fusarium coffeatum]</Hit_def>
+  <Hit_accession>XP_031017054</Hit_accession>
+  <Hit_len>921</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>410.994</Hsp_bit-score>
+      <Hsp_score>1055</Hsp_score>
+      <Hsp_evalue>3.75892e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>693</Hsp_hit-from>
+      <Hsp_hit-to>921</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>190</Hsp_identity>
+      <Hsp_positive>215</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>APTAKAAKPPKFFLIGDSTVAVDGGWGDGLLSYLKSPAQGDNRGVSGSTTVSWKSSGRWDALLKDVGAAKNDFEPVVTIQFGHNDQKVMQLDEFRTNLVSIGNDIRNAGGTPIFITSLTRRTFSGGEAVQNLKDWAAETISAAADVGAQYLELNKASTDYVNAIGSQNADFYNWGPGDRTHLNPPGEIVFGRMVVDLLLEKRGDFSSYFDSNEALSEKIKNGEFATGDE</Hsp_hseq>
+      <Hsp_midline>+PT++AAKPP+FFLIGDSTVAV+GGWGDGLLSYLK+P +GDNRGVSGSTTVSWK SGRWD L++D+ +AK DFEPVVTIQFGHNDQKVMQLDEF +NL++IGNDI+ AGGTPIFITSLTRRTFSGG+ V+NLKDWAAETI+AA DVGA+YLELNKASTDYVNAIG+QNAD YNWGPGDRTHLNP GEIVFGRMV+DLLLEKRGDF+ YF+S+EALSEKIK GE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gb|RKL01033.1|</Hit_id>
+  <Hit_def>hypothetical protein BFJ71_g5276 [Fusarium oxysporum]</Hit_def>
+  <Hit_accession>RKL01033</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>388.267</Hsp_bit-score>
+      <Hsp_score>996</Hsp_score>
+      <Hsp_evalue>4.00136e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>184</Hsp_identity>
+      <Hsp_positive>209</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPLAQAAKPPQFFLIGDSTVAVDGGWGNGLLSYLNAPAKGDNRGVSGSTTVSWKSNGRWDTLIEDISAAKAEFEPVVTIQFGHNDQKVMQLNEFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEKRDDFSSYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP ++AAKPP+FFLIGDSTVAV+GGWG+GLLSYL AP +GDNRGVSGSTTVSWK +GRWDTLI DIS+AK +FEPVVTIQFGHNDQKVMQL+EFH+NL++IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLEKR DF+ YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gb|KAL7758689.1|</Hit_id>
+  <Hit_def>hypothetical protein ACKLNR_011116 [Fusarium oxysporum f. sp. zingiberi] &gt;gb|KAM0081163.1| hypothetical protein ACKRZS_006642 [Fusarium odoratissimum]</Hit_def>
+  <Hit_accession>KAL7758689</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>388.267</Hsp_bit-score>
+      <Hsp_score>996</Hsp_score>
+      <Hsp_evalue>4.76841e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>183</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPVAQAAKPPQFFLIGDSTVAVDGGWGNGLLSYLNAPAKGDNRGVSGSTTVSWKSNGRWDTLIKDISAAKAEFEPVVTIQFGHNDQKVMQLNDFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEKRDDFSSYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP ++AAKPP+FFLIGDSTVAV+GGWG+GLLSYL AP +GDNRGVSGSTTVSWK +GRWDTLI+DIS+AK +FEPVVTIQFGHNDQKVMQL++FH+NL++IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLEKR DF+ YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gb|KAI1011828.1|</Hit_id>
+  <Hit_def>hypothetical protein LB503_004550 [Fusarium chuoi]</Hit_def>
+  <Hit_accession>KAI1011828</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>388.267</Hsp_bit-score>
+      <Hsp_score>996</Hsp_score>
+      <Hsp_evalue>4.92781e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>182</Hsp_identity>
+      <Hsp_positive>207</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPVARAAKPPQFFLIGDSTVAVDGGWGNGFLSYLNAPAKGDNRGVSGSTTVSWKSNGRWDTLIKNVGAAKADFEPVVTIQFGHNDQKVMQLDEFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEARKDFSCYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP +RAAKPP+FFLIGDSTVAV+GGWG+G LSYL AP +GDNRGVSGSTTVSWK +GRWDTLI+++ +AK DFEPVVTIQFGHNDQKVMQLDEFH+NL++IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLE R DF+ YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>gb|KAL5593581.1|</Hit_id>
+  <Hit_def>hypothetical protein FOBRF1_012683 [Fusarium oxysporum]</Hit_def>
+  <Hit_accession>KAL5593581</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>387.882</Hsp_bit-score>
+      <Hsp_score>995</Hsp_score>
+      <Hsp_evalue>5.43872e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>183</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPVAQAAKPPQFFLIGDSTVAVDGGWGNGLLSYLNAPAKGDNRGVSGSTTVSWKSNGRWDTLIKDISAAKAEFEPVVTIQFGHNDQKVMQLNDFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEKRDDFSSYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP ++AAKPP+FFLIGDSTVAV+GGWG+GLLSYL AP +GDNRGVSGSTTVSWK +GRWDTLI+DIS+AK +FEPVVTIQFGHNDQKVMQL++FH+NL++IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLEKR DF+ YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>gb|KAH7466135.1|</Hit_id>
+  <Hit_def>hypothetical protein FOMA001_g16298 [Fusarium oxysporum f. sp. matthiolae]</Hit_def>
+  <Hit_accession>KAH7466135</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>387.882</Hsp_bit-score>
+      <Hsp_score>995</Hsp_score>
+      <Hsp_evalue>5.62054e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>184</Hsp_identity>
+      <Hsp_positive>209</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPLAQAAKPPQFFLIGDSTVAVDGGWGNGLLSYLHAPAKGDNRGVSGSTTVSWKSNGRWDTLIKDISAAKAEFEPVVTIQFGHNDQKVMQLNEFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEKRDDFPSYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP ++AAKPP+FFLIGDSTVAV+GGWG+GLLSYL AP +GDNRGVSGSTTVSWK +GRWDTLI+DIS+AK +FEPVVTIQFGHNDQKVMQL+EFH+NL++IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLEKR DF  YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>ref|XP_023429885.1|</Hit_id>
+  <Hit_def>probable acetylesterase [Fusarium fujikuroi IMI 58289] &gt;gb|KLO82428.1| putative acetylesterase [Fusarium fujikuroi] &gt;gb|KLO83029.1| putative acetylesterase [Fusarium fujikuroi] &gt;gb|KLP21314.1| putative acetylesterase [Fusarium fujikuroi] &gt;gb|QGI63871.1| hypothetical protein CEK27_007842 [Fusarium fujikuroi] &gt;gb|QGI81141.1| hypothetical protein CEK25_007870 [Fusarium fujikuroi]</Hit_def>
+  <Hit_accession>XP_023429885</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>387.882</Hsp_bit-score>
+      <Hsp_score>995</Hsp_score>
+      <Hsp_evalue>6.13565e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>184</Hsp_identity>
+      <Hsp_positive>205</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPVARAAKPPQFFLIGDSTVAVDGGWGNGFLSYLNAPARGDNRGVSGSTTVSWKSNGRWDTLIKDIGTAKADFEPVVTIQFGHNDQKVMQLDEFHANLVEIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLETREDFSSYFTPNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP +RAAKPP+FFLIGDSTVAV+GGWG+G LSYL AP  GDNRGVSGSTTVSWK +GRWDTLI+DI +AK DFEPVVTIQFGHNDQKVMQLDEFH+NL+ IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLE R DF+ YF  ++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>gb|TVY73690.1|</Hit_id>
+  <Hit_def>Rhamnogalacturonan acetylesterase RhgT [Fusarium oxysporum f. sp. cubense]</Hit_def>
+  <Hit_accession>TVY73690</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>387.882</Hsp_bit-score>
+      <Hsp_score>995</Hsp_score>
+      <Hsp_evalue>6.77178e-134</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>229</Hsp_query-to>
+      <Hsp_hit-from>19</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>184</Hsp_identity>
+      <Hsp_positive>210</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>229</Hsp_align-len>
+      <Hsp_qseq>SPTSRAAKPPRFFLIGDSTVAVNGGWGDGLLSYLKAPTEGDNRGVSGSTTVSWKFSGRWDTLIRDISSAKGDFEPVVTIQFGHNDQKVMQLDEFHSNLINIGNDIKKAGGTPIFITSLTRRTFSGGQVVENLKDWAAETIAAAGDVGAEYLELNKASTDYVNAIGAQNADSYNWGPGDRTHLNPSGEIVFGRMVLDLLLEKRGDFAVYFNSDEALSEKIKKGEYATGGE</Hsp_qseq>
+      <Hsp_hseq>SPVAQAAKPPQFFLIGDSTVAVDGGWGNGLLSYLNAPAKGDNRGVSGSTTVSWKSNGRWDTLIKGISAAKDEFEPVVTIQFGHNDQKVMQLNEFHANLVDIGNQIKAAGGTPIFITSLTRRTFQNGEVVQNLKEWAAETIAAAGDVGAQYLELNKASTDYVNAIGNENAQRYNWGEGDRTHLNPAGEIVFGRMVVDLLLEKRDDFSSYFTSNKALSDKIAKGEFATGDE</Hsp_hseq>
+      <Hsp_midline>SP ++AAKPP+FFLIGDSTVAV+GGWG+GLLSYL AP +GDNRGVSGSTTVSWK +GRWDTLI+ IS+AK +FEPVVTIQFGHNDQKVMQL+EFH+NL++IGN IK AGGTPIFITSLTRRTF  G+VV+NLK+WAAETIAAAGDVGA+YLELNKASTDYVNAIG +NA  YNWG GDRTHLNP+GEIVFGRMV+DLLLEKR DF+ YF S++ALS+KI KGE+ATG E</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>1048232011</Statistics_db-num>
+      <Statistics_db-len>398169318359</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

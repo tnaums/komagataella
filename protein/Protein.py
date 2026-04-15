@@ -72,7 +72,10 @@ class Protein():
         Uses biopython method to calculate and return the pI of
         self.mature_recombinant.
         '''
-        protein = IP(self.amino_acids)
+        try:
+            protein = IP(self.amino_acids)
+        except IndexError:
+            return 0
         return protein.pi()
 
 
